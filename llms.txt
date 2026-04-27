@@ -1,0 +1,194 @@
+# 有赞云开放平台 — AI 可读接口索引
+
+共 100 个已上线接口
+
+- [api-test.1.0.1](docs/apis/gateway-test/api-test_1_0_1.md) | gateway-test | 网关测试分组 | test
+- [api-test.1.0.2](docs/apis/gateway-test/api-test_1_0_2.md) | gateway-test | 网关测试分组 | 第一行\n\n\n第二行
+第三行
+- [api-test.1.1.0](docs/apis/gateway-test/api-test_1_1_0.md) | gateway-test | 网关测试分组 | test
+- [api-test.1.2.2](docs/apis/gateway-test/api-test_1_2_2.md) | gateway-test | 网关测试分组 | test12
+- [api.1.0.0](docs/apis//api_1_0_0.md) | demo |  | 
+- [com.youzan.mock.platform.api.MockHistoricalRecordService.1.0.0](docs/apis/mock-platform/com.youzan.mock.platform.api.MockHistoricalRecordService_1_0_0.md) | mock-platform | test | 保存调试记录
+- [com.youzan.sogo.token.generate.1.0.0](docs/apis/bifrost-developer/com.youzan.sogo.token.generate_1_0_0.md) | bifrost-developer | test | 搜狗输入法回调方法生成token
+- [demo.1.0](docs/apis/bifrost-test/demo_1_0.md) | bifrost-test | 网关测试分组 | 1234
+- [pay.gateway.1.0.0](docs/apis/pay-fund-channel/pay.gateway_1_0_0.md) | pay-fund-channel | carmen_api | 支付网关
+- [youzan.ad.order.detail.query.1.0.0](docs/apis/ad-cps/youzan.ad.order.detail.query_1_0_0.md) | ad-cps | dsp_api | 查询分佣订单信息（仅支持合作渠道方使用，开发者及商家请勿调用）
+- [youzan.agent.gatewaytest.run.preworkflow.1.0.0](docs/apis/gateway-test/youzan.agent.gatewaytest.run.preworkflow_1_0_0.md) | gateway-test | 网关测试分组 | aaa
+- [youzan.agent.gatewaytest.upload.preworkflow.1.0.0](docs/apis/gateway-test/youzan.agent.gatewaytest.upload.preworkflow_1_0_0.md) | gateway-test | 网关测试分组 | 智能体测试专用：文件上传测试
+- [youzan.aiguang.live.search.1.0.0](docs/apis/guang-live/youzan.aiguang.live.search_1_0_0.md) | guang-live | open_education_broadcast | 查询有赞店铺直播列表数据
+- [youzan.appstore.open.data.page.pvuv.get.1.0.0](docs/apis/data-sync/youzan.appstore.open.data.page.pvuv.get_1_0_0.md) | data-sync | open_market | 查询微页面pvuv数据，只支持3个月内的数据
+- [youzan.appstore.open.data.page.track.get.1.0.0](docs/apis/data-sync/youzan.appstore.open.data.page.track.get_1_0_0.md) | data-sync | open_market | 查询微页面导流数据
+- [youzan.appstore.open.page.create.1.0.0](docs/apis/appstore/youzan.appstore.open.page.create_1_0_0.md) | appstore | open_market | 创建微页面
+- [youzan.appstore.open.page.delete.1.0.0](docs/apis/appstore/youzan.appstore.open.page.delete_1_0_0.md) | appstore | open_market | 删除店铺的微页面
+- [youzan.appstore.open.page.update.1.0.0](docs/apis/appstore/youzan.appstore.open.page.update_1_0_0.md) | appstore | open_market | 更新模板
+- [youzan.appstore.open.subscribe.query.1.0.0](docs/apis/appstore/youzan.appstore.open.subscribe.query_1_0_0.md) | appstore | open_market | 查询应用订购和授权记录
+- [youzan.appstore.open.subscribe.query.1.0.1](docs/apis/appstore/youzan.appstore.open.subscribe.query_1_0_1.md) | appstore | open_market | 查询应用订购和授权记录
+- [youzan.appstore.open.subscribe.query.1.0.2](docs/apis/appstore/youzan.appstore.open.subscribe.query_1_0_2.md) | appstore | open_market | 查询应用订购和授权记录，当查询订单不存在时返回为空。该接口仅限工具型应用使用，开发者可以使用应用下任意一个有效期内access_token查询该接口，注意：不支持云测试店铺对应的access_token查询
+- [youzan.appstore.open.trade.create.1.0.0](docs/apis/appstore/youzan.appstore.open.trade.create_1_0_0.md) | appstore | open_market | 外部发开发者创建内购交易
+- [youzan.appstore.open.trade.create.1.0.2](docs/apis/appstore/youzan.appstore.open.trade.create_1_0_2.md) | appstore | open_market | 用于创建应用内购订单
+- [youzan.appstore.open.user.get.1.0.0](docs/apis/appstore/youzan.appstore.open.user.get_1_0_0.md) | appstore | open_market | 根据”去使用“newUserToken查询员工使用信息，触发场景：当店铺购买应用后，店铺员工点击”去使用“时候触发newUserToken，newUserToken值传入下方请求参数user_token中。该接口access_token调用规则：使用当前应用中下的任意有效access_token即可调用此接口，会校验店铺是否已授权给access_token对应的client_id，校验通过才会响应店铺员工操作人数据。
+- [youzan.appstore.service.demand.order.query.1.0.0](docs/apis/appstore/youzan.appstore.service.demand.order.query_1_0_0.md) | appstore | customized_api | 服务需求订单查询订单金额（纷享销客，连接器使用）当data返回为空时，代表kdt_id和订单号无对应关系。当data有值时表示请求成功
+- [youzan.appstore.sevicedemand.query.1.0.0](docs/apis/appstore/youzan.appstore.sevicedemand.query_1_0_0.md) | appstore | customized_api | 根据时间获取需求列表(连接器调用)
+- [youzan.appstore.sevicedemand.upload.status.1.0.0](docs/apis/appstore/youzan.appstore.sevicedemand.upload.status_1_0_0.md) | appstore | customized_api | 修改服务市场需求状态
+- [youzan.bifrost.service.security.code.validate.1.0.0](docs/apis/test/youzan.bifrost.service.security.code.validate_1_0_0.md) | test | customized_api | 校验app开店安全码
+- [youzan.bigdata.ai.category.get.1.0.0](docs/apis/ai-app/youzan.bigdata.ai.category.get_1_0_0.md) | ai-app | item_category | 场景：商家可传入商品标题/描述，店铺名称调用接口，接口会根据上述条件生成对应的商品类目推荐。例如：输入”iPhone XS Max 64G “  就会返回”{"rule_id":"10050012""category_chain_list":[0:"数码办公"1:"手机"]"percent":1}” rule_id：类目id，category_chain_list：推荐类目分类，percent：分类准确度为1 推荐使用。
+- [youzan.bigdata.consumer.goods.get.1.0.0](docs/apis/consumer-datacenter/youzan.bigdata.consumer.goods.get_1_0_0.md) | consumer-datacenter | item | 基于用户ID获取店铺内个性化推荐商品列表。未登录用户返回综合评分高的商品
+- [youzan.bigdata.consumer.text.get.descriptiontext.1.0.0](docs/apis/consumer-datacenter/youzan.bigdata.consumer.text.get.descriptiontext_1_0_0.md) | consumer-datacenter | data_center | 商品文本类接口。输入一个带产品词的query或商品标题，返回一段如诗般优雅的商品描述文案。文案可以用于B端店铺-选择一个商品（点击创建或编辑）在-分享描述中使用。 
+- [youzan.bigdata.customer.behave.get.1.0.0](docs/apis/seller-datacenter/youzan.bigdata.customer.behave.get_1_0_0.md) | seller-datacenter | ka_customization | 获取小程序用户行为数据，当前是提供给腾讯有数
+- [youzan.bigdata.customer.behave.get.1.0.1](docs/apis/seller-datacenter/youzan.bigdata.customer.behave.get_1_0_1.md) | seller-datacenter | ka_customization | 获取小程序用户行为数据，当前是提供给腾讯有数
+- [youzan.bigdata.data.get.1.0.0](docs/apis/seller-datacenter/youzan.bigdata.data.get_1_0_0.md) | seller-datacenter | item | 该接口仅支持在快手直播产生的推广数据，查询时间间隔T+1，建议数据在第二天的10：00之后查询前一天的数据
+- [youzan.bigdata.datacenter.psmanage.create.pagesource.1.0.0](docs/apis/seller-datacenter/youzan.bigdata.datacenter.psmanage.create.pagesource_1_0_0.md) | seller-datacenter | extension_analysis | 创建推广分析, 生成可跟踪数据的推广链接，支持连锁模型
+- [youzan.bigdata.datacenter.psmanage.get.psdeatils.1.0.0](docs/apis/seller-datacenter/youzan.bigdata.datacenter.psmanage.get.psdeatils_1_0_0.md) | seller-datacenter | extension_analysis | 获取单个推广监控数据详情(包含明细和汇总)
+- [youzan.bigdata.datacenter.psmanage.get.psorder.1.0.0](docs/apis/seller-datacenter/youzan.bigdata.datacenter.psmanage.get.psorder_1_0_0.md) | seller-datacenter | extension_analysis | 按天获取某个推广分析下的订单，仅支持离线，不支持今日实时
+- [youzan.bigdata.datacenter.psmanage.search.pagepsdata.1.0.0](docs/apis/seller-datacenter/youzan.bigdata.datacenter.psmanage.search.pagepsdata_1_0_0.md) | seller-datacenter | extension_analysis | 分页获取多个人推广监控效果数据
+- [youzan.bigdata.datacenter.psmanage.search.pagesourcedetail.1.0.0](docs/apis/seller-datacenter/youzan.bigdata.datacenter.psmanage.search.pagesourcedetail_1_0_0.md) | seller-datacenter | extension_analysis | 获取推广监控列表基本数据,不包含效果数据。
+- [youzan.bigdata.datacenter.psmanage.update.pagesource.1.0.0](docs/apis/seller-datacenter/youzan.bigdata.datacenter.psmanage.update.pagesource_1_0_0.md) | seller-datacenter | extension_analysis | 更新推广监控名称
+- [youzan.bigdata.gbox.general.query.service.1.0.0](docs/apis/seller-growth-box/youzan.bigdata.gbox.general.query.service_1_0_0.md) | seller-growth-box | customized_api | 增长工具箱专用接口，只用于增长工具箱应用。
+返回结构为有赞common组件，PlainResult, ListResult等，data为各个实际接口返回的数据，实际接口同入参的serviceName保持一致。
+- [youzan.bigdata.heatmap.list.pages.1.0.0](docs/apis/ebiz-stats/youzan.bigdata.heatmap.list.pages_1_0_0.md) | ebiz-stats | data_center | 获取热力图页面列表,分页方式获取页面列表。支持页面模糊搜索和页面类型的筛选。返回的id为热力图id，后续查询页面统计信息时传递上述id进行查询。
+- [youzan.bigdata.heatmap.query.heatMapDetail.1.0.0](docs/apis/ebiz-stats/youzan.bigdata.heatmap.query.heatMapDetail_1_0_0.md) | ebiz-stats | data_center | 根据热力图id获取各个渠道下的页面的每个点位点击情况。
+- [youzan.bigdata.heatmap.query.pageData.1.0.0](docs/apis/ebiz-stats/youzan.bigdata.heatmap.query.pageData_1_0_0.md) | ebiz-stats | data_center | 根据热力图id获取页面级别统计信息：点击人数、点击次数、浏览量、访客数等
+- [youzan.bigdata.material.get.1.0.0](docs/apis/seller-datacenter/youzan.bigdata.material.get_1_0_0.md) | seller-datacenter | ka_customization | 获取素材相关的统计数据
+- [youzan.bigdata.psmanage.get.orderpsinfo.1.0.0](docs/apis/seller-datacenter/youzan.bigdata.psmanage.get.orderpsinfo_1_0_0.md) | seller-datacenter | data_center | 通过订单号查询订单所属推广分析信息
+- [youzan.bigdata.realtime.query.1.0.0](docs/apis/seller-datacenter/youzan.bigdata.realtime.query_1_0_0.md) | seller-datacenter | shop | 实时分析的实时概况数据，主要包括浏览访问、成交转化、客户会员
+- [youzan.bigdata.sku.query.getSkuDataInfo.1.0.2](docs/apis/dc-daemon/youzan.bigdata.sku.query.getSkuDataInfo_1_0_2.md) | dc-daemon | data_center | 根据商品下的每个sku，通过关联hbase表取出在每一天的成交金额和成交数量。用于报表导出，非实时查询。最大支持31天的查询。
+- [youzan.bigdata.spu.query.1.0.0](docs/apis/seller-datacenter/youzan.bigdata.spu.query_1_0_0.md) | seller-datacenter | item | 商品分析-单个商品详情数据接口；查询T-1的数据，次日上午8点查询，否则数据不完整。查询规则：0：实时查询当前数据，1：自然天，6：自定义查询天数。 当date_type=0时start_day和end_day必传当天日期。 当date_type=1时start_day和end_day可以查询历史天数数据，仅支持查询一天，不支持查询当天数据。 当date_type=6时start_day和end_day查询间隔不能大于3天，不支持查询当天数据。
+- [youzan.bigdata.spu.query.1.0.1](docs/apis/seller-datacenter/youzan.bigdata.spu.query_1_0_1.md) | seller-datacenter | item | 商品分析-单个商品详情数据接口-V2版；查询T-1的数据，次日上午8点查询，否则数据不完整。1、查询规则：date_type取值说明：0：实时查询当前数据，1：自然天，2：自然周，3：自然月，6：自定义查询天数。 2、具体说明：当date_type=0时currentDay必传当天日期。 当date_type=1时start_day和end_day可以查询历史天数数据，仅支持查询一天，不支持查询当天数据。 当date_type=6时start_day和end_day查询间隔不能大于30天，不支持查询当天数据。
+- [youzan.bigdata.team.flowoverview.query.1.0.0](docs/apis/seller-datacenter/youzan.bigdata.team.flowoverview.query_1_0_0.md) | seller-datacenter | data_center | 流量概览渠道维度数据接口(不支持合伙人)
+1.订单相关指标（如下单人数）以下单时间统计，支付相关指标（如支付人数）以支付成功时间统计（拼团订单成团算支付、货到付款订单发货算支付）。订单查询页面根据下单时间查询对应订单。若顾客当日下单、次日支付，则下单与支付数据会有一天时间差，请注意区分。 2.由于是离线数据，建议每天早晨9：00后再请求。
+3.当响应参数返回值有特殊数值的-999999d时，开发者可以理解数据值等于空。
+- [youzan.bigdata.team.org.data.list.1.0.0](docs/apis/seller-datacenter/youzan.bigdata.team.org.data.list_1_0_0.md) | seller-datacenter | trade | 云上专柜定制交易数据报表
+- [youzan.bigdata.useropenbehavior.query.1.0.0](docs/apis/seller-datacenter/youzan.bigdata.useropenbehavior.query_1_0_0.md) | seller-datacenter | data_center | 店铺用户行为数据接口（大客户专属），每天早上9点更新前一天的用户行为数据
+- [youzan.bigdata.useropenbehavior.query.1.0.1](docs/apis/seller-datacenter/youzan.bigdata.useropenbehavior.query_1_0_1.md) | seller-datacenter | data_center | 店铺用户行为数据接口（大客户专属），每天早上9点更新前一天的用户行为数据
+- [youzan.cardvoucher.card.bill.query.3.0.1](docs/apis/yz-cardvoucher-biz/youzan.cardvoucher.card.bill.query_3_0_1.md) | yz-cardvoucher-biz | stored_value_card | 用户卡账单查询       
+备注说明：ADJUST_ADD、ADJUST_SUBTRACT为新增查询业务类型，为兼容历史接口查询返回，当biz_type输入为ADJUST_ADD或ADJUST_SUBTRACT时，返回类型按照此类型返回，否则会算入其他类型中
+
+- [youzan.cardvoucher.card.create.init.1.0.0](docs/apis/yz-cardvoucher-biz/youzan.cardvoucher.card.create.init_1_0_0.md) | yz-cardvoucher-biz | stored_value_card | 储值礼品卡制卡接口，会创建未激活的礼品卡且没有归属人，该礼品卡可以在商家后台 储值查询-卡查询中根据返回的卡号查询信息
+一般配合youzan.cardvoucher.giftcard.marketing.issue接口进行后续的发卡使用
+- [youzan.cardvoucher.card.create.template.1.0.0](docs/apis/yz-cardvoucher-biz/youzan.cardvoucher.card.create.template_1_0_0.md) | yz-cardvoucher-biz | stored_value_card | 地址：商家后台-会员-储值规则，创建余额模板或储值卡模板
+一个店铺只能创建一个余额模板，可创建多个储值卡模板，储值卡的名字不能重复
+仅限连接器项目使用，此接口生成的卡模板部分属性储值内部已写死
+- [youzan.cardvoucher.card.list.commission.1.0.0](docs/apis/yz-cardvoucher-biz/youzan.cardvoucher.card.list.commission_1_0_0.md) | yz-cardvoucher-biz | stored_value_card | 根据交易单号查询提成信息，如果这个单子没有获得提成的人，则返回空。
+下单后非即时返回结果，一般5秒内出结果，建议做个兼容操作，如果未查询到结果，可以1分钟，5分钟，10分钟再进行结果查询。
+- [youzan.cardvoucher.card.template.query.3.0.0](docs/apis/yz-cardvoucher-biz/youzan.cardvoucher.card.template.query_3_0_0.md) | yz-cardvoucher-biz | stored_value_card | 分页查询查询某店铺下的所有未被删除的卡模板信息列表
+- [youzan.cardvoucher.datasync.import.cardcreate.1.0.0](docs/apis/yz-cardvoucher-biz/youzan.cardvoucher.datasync.import.cardcreate_1_0_0.md) | yz-cardvoucher-biz | stored_value_card | 供储值卡外部开卡
+- [youzan.cardvoucher.datasync.import.cardcreate.1.0.1](docs/apis/yz-cardvoucher-biz/youzan.cardvoucher.datasync.import.cardcreate_1_0_1.md) | yz-cardvoucher-biz | stored_value_card | 用于外部储值根据外部卡号，进行开卡
+- [youzan.cardvoucher.datasync.import.cardfundchange.1.0.0](docs/apis/yz-cardvoucher-biz/youzan.cardvoucher.datasync.import.cardfundchange_1_0_0.md) | yz-cardvoucher-biz | stored_value_card | 同步储值卡资金变动流水信息至有赞，仅限连接器项目使用
+- [youzan.cardvoucher.datasync.import.cardfundchange.1.0.1](docs/apis/yz-cardvoucher-biz/youzan.cardvoucher.datasync.import.cardfundchange_1_0_1.md) | yz-cardvoucher-biz | stored_value_card | 同步储值卡资金变动流水信息至有赞，仅限连接器项目使用
+- [youzan.cardvoucher.datasync.import.cardfundchange.1.0.2](docs/apis/yz-cardvoucher-biz/youzan.cardvoucher.datasync.import.cardfundchange_1_0_2.md) | yz-cardvoucher-biz | stored_value_card | 接入前请阅读调用注意事项：https://doc.youzanyun.com/resource/doc/3404/5593
+本接口需配合
+youzan.cardvoucher.datasync.import.cardfundchangeresultquery进行同步结果查询使用
+- [youzan.cardvoucher.datasync.import.cardfundchangeresultquery.1.0.0](docs/apis/yz-cardvoucher-biz/youzan.cardvoucher.datasync.import.cardfundchangeresultquery_1_0_0.md) | yz-cardvoucher-biz | stored_value_card | 搭配youzan.cardvoucher.datasync.import.cardfundchange使用；回流接口响应成功后可通过本接口查询结果，通常5s内能返回明确的结果，如果返回的是PROCRSSING处理中，一般是未能正确被处理(比如关联流水还未写入会尝试等待)，内部会进行补偿处理，3次补偿仍未成功当做失败处理，因此建议轮询查询时间间隔为：回流后的2s,回流后的5s,回流后的35s,回流后的65s...后续间隔30s查询一次至明确成功或失败
+- [youzan.cardvoucher.delivery.card.list.info.1.0.0](docs/apis/yz-cardvoucher-biz/youzan.cardvoucher.delivery.card.list.info_1_0_0.md) | yz-cardvoucher-biz | retail_valuecard | 分页查询店铺下用户的提货卡列表，返回结果中包含了可用和不可用的提货卡数据，如果提货卡不可用，结果中会告知不可用的原因，方便商家进行识别筛选。在使用提货卡核销功能时，需先通过该接口查询用户的提货卡信息。
+- [youzan.cardvoucher.delivery.card.pay.apply.1.0.0](docs/apis/yz-cardvoucher-biz/youzan.cardvoucher.delivery.card.pay.apply_1_0_0.md) | yz-cardvoucher-biz | retail_valuecard | 提供提货卡核销的功能，使用前需先调youzan.cardvoucher.delivery.card.list.info（查询用户可提货卡列表接口）来查询用户的提货卡及其提货商品信息。
+注意：该接口不会扣在有赞后台配置的商品库存，也不会生成订单，如果有需要对接，请直接调库存接口，更新线上库存
+
+- [youzan.cardvoucher.delivery.card.pay.query.1.0.0](docs/apis/yz-cardvoucher-biz/youzan.cardvoucher.delivery.card.pay.query_1_0_0.md) | yz-cardvoucher-biz | retail_valuecard | 提货卡核销结果查询
+- [youzan.cardvoucher.giftcard.amount.query.3.0.0](docs/apis/yz-cardvoucher-biz/youzan.cardvoucher.giftcard.amount.query_3_0_0.md) | yz-cardvoucher-biz | gift_card | 根据店铺id查询该店铺下礼品卡的激活总数、激活金额总数、激活未使用的金额总数
+- [youzan.cardvoucher.giftcard.apply.activate.1.0.0](docs/apis/yz-cardvoucher-biz/youzan.cardvoucher.giftcard.apply.activate_1_0_0.md) | yz-cardvoucher-biz | stored_value_card | 储值礼品卡激活接口，（如实现储值卡激活扩展点https://doc.youzanyun.com/detail/EXT/20001可触发扩展点；如礼品卡已经激活会返回成功）
+- [youzan.cardvoucher.giftcard.bill.query.3.0.0](docs/apis/yz-cardvoucher-biz/youzan.cardvoucher.giftcard.bill.query_3_0_0.md) | yz-cardvoucher-biz | gift_card | 最大限制查询条数5000（不含）；
+新储值商家查询全部卡交易记录，老储值商家仅支持查询礼品卡交易记录；
+- [youzan.cardvoucher.giftcard.detail.query.3.0.0](docs/apis/yz-cardvoucher-biz/youzan.cardvoucher.giftcard.detail.query_3_0_0.md) | yz-cardvoucher-biz | gift_card | 根据店铺kdtId批量查询礼品卡明细信息，包括卡号、卡余额、持有人手机号等。
+此为老版，推荐使用3.0.1新版本
+- [youzan.cardvoucher.giftcard.detail.query.3.0.1](docs/apis/yz-cardvoucher-biz/youzan.cardvoucher.giftcard.detail.query_3_0_1.md) | yz-cardvoucher-biz | gift_card | 根据店铺kdtId批量查询礼品卡明细信息，包括卡号、卡余额、持有人手机号等
+版本新增：yz_open_id（有赞开放ID）参数
+- [youzan.cardvoucher.giftcard.group.queryno.3.0.0](docs/apis/yz-cardvoucher-biz/youzan.cardvoucher.giftcard.group.queryno_3_0_0.md) | yz-cardvoucher-biz | gift_card | 根据订单号查询已经开卡成功的卡号列表
+- [youzan.cardvoucher.giftcard.group.upimgname.3.0.0](docs/apis/yz-cardvoucher-biz/youzan.cardvoucher.giftcard.group.upimgname_3_0_0.md) | yz-cardvoucher-biz | gift_card | 根据卡号修改礼品卡图片、卡名称
+- [youzan.cardvoucher.giftcard.invalid.card.1.0.0](docs/apis/yz-cardvoucher-biz/youzan.cardvoucher.giftcard.invalid.card_1_0_0.md) | yz-cardvoucher-biz | stored_value_card | 失效礼品卡的电子卡，仅激活之前的卡可进行失效
+- [youzan.cardvoucher.giftcard.marketing.issue.3.0.0](docs/apis/yz-cardvoucher-biz/youzan.cardvoucher.giftcard.marketing.issue_3_0_0.md) | yz-cardvoucher-biz | gift_card | 商家在营销活动中可以给指定用户发送礼品卡
+- [youzan.cardvoucher.giftcard.operate.exchange.1.0.0](docs/apis/yz-cardvoucher-biz/youzan.cardvoucher.giftcard.operate.exchange_1_0_0.md) | yz-cardvoucher-biz | stored_value_card | 礼品卡兑换：支持卡密兑换和扫码兑换，仅进行兑换，不会自动触发激活。可通过商家后台批量制卡后生成的兑换信息进行调用，支持电子卡和实体卡兑换。
+备注：如扩展点兑换流程中衔接本接口，返回的电子卡号不可直接作为用户的卡号返回，否则选择此卡号支付时会走到标品，可通过自定义卡号映射或加固定前/后缀解决，非扩展点流程对接无需关注本备注。
+- [youzan.cardvoucher.giftcard.query.buydetail.1.0.0](docs/apis/yz-cardvoucher-biz/youzan.cardvoucher.giftcard.query.buydetail_1_0_0.md) | yz-cardvoucher-biz | stored_value_card | 礼品卡模板详情查询：可分页查询礼品卡模板详细信息。与个人中心->余额->礼品卡->购买礼品卡->礼品卡模板详细页面中的查询效果一致。
+- [youzan.cardvoucher.giftcard.query.buyercenter.1.0.0](docs/apis/yz-cardvoucher-biz/youzan.cardvoucher.giftcard.query.buyercenter_1_0_0.md) | yz-cardvoucher-biz | stored_value_card | 礼品卡分页查询：可分页查询礼品卡列表。与个人中心->余额->礼品卡->购买礼品卡页面中的查询效果一致。
+- [youzan.cardvoucher.giftcard.template.query.3.0.0](docs/apis/yz-cardvoucher-biz/youzan.cardvoucher.giftcard.template.query_3_0_0.md) | yz-cardvoucher-biz | gift_card | 根据卡模板号分页查询卡信息列表
+- [youzan.cardvoucher.openCardService.verify.checkCustomerPayCards.1.0.0](docs/apis/yz-cardvoucher-biz/youzan.cardvoucher.openCardService.verify.checkCustomerPayCards_1_0_0.md) | yz-cardvoucher-biz | stored_value_card | 创建订单前，校验卡列表是否可用
+- [youzan.cardvoucher.opencardservice.query.querycustomerpaycards.1.0.0](docs/apis/yz-cardvoucher-biz/youzan.cardvoucher.opencardservice.query.querycustomerpaycards_1_0_0.md) | yz-cardvoucher-biz | stored_value_card | 下单页查询用户可用储值卡列表，返回相关的余额卡、礼品卡信息。
+针对开放接口，只提供简单的查询可用卡列表逻辑。
+支持的功能
+1：如果当前购买的商品不在卡模板配置的【适用商品】范围内，那么该卡不可用
+2：如果当前所在店铺不在卡模板配置的【适用店铺】范围内，那么该卡不可用
+
+不支持：
+1.不支持判断  卡模板设置的【优惠设置】
+2.不支持判断 卡模板设置的【仅限此卡支付时享受相应折扣优惠】
+3.不支持判断【储值会员】模式下，卡模板设置的【余额全额支付时可享受会员优惠】
+- [youzan.cardvoucher.poundage.rule.query.3.0.0](docs/apis/yz-cardvoucher-biz/youzan.cardvoucher.poundage.rule.query_3_0_0.md) | yz-cardvoucher-biz | retail_valuecard | 储值卡退卡手续费规则查询，调用储值卡退卡申请API前置调用，用于计算退卡手续费
+- [youzan.cardvoucher.product.card.query.info.1.0.0](docs/apis/yz-cardvoucher-biz/youzan.cardvoucher.product.card.query.info_1_0_0.md) | yz-cardvoucher-biz | stored_value_card | 分页查询主卡下的子卡信息，默认查询处于正常状态下的子卡信息
+- [youzan.cardvoucher.recharge.rule.query.1.0.0](docs/apis/yz-cardvoucher-biz/youzan.cardvoucher.recharge.rule.query_1_0_0.md) | yz-cardvoucher-biz | stored_value_card | 该接口用于查看商家某张储值卡模板的储值规则。目前仅支持查询充值设置中的礼包信息和卡面额信息。
+- [youzan.cardvoucher.valuecard.adj.rcd.byacp.search.3.0.0](docs/apis/yz-cardvoucher-biz/youzan.cardvoucher.valuecard.adj.rcd.byacp.search_3_0_0.md) | yz-cardvoucher-biz | stored_value_card | 按条件分页查询在该店铺发生的调账记录
+此为老版，推荐使用3.0.1新版本
+
+- [youzan.cardvoucher.valuecard.adj.rcd.byacp.search.3.0.1](docs/apis/yz-cardvoucher-biz/youzan.cardvoucher.valuecard.adj.rcd.byacp.search_3_0_1.md) | yz-cardvoucher-biz | stored_value_card | 按条件分页查询在该店铺发生的调账记录
+版本新增：yz_open_id（有赞开放ID）参数
+
+- [youzan.cardvoucher.valuecard.buy.order.query.3.0.0](docs/apis/yz-cardvoucher-biz/youzan.cardvoucher.valuecard.buy.order.query_3_0_0.md) | yz-cardvoucher-biz | stored_value_card | 查询该店铺下的用户购卡详情，如果传入卡模板号，则表示查询卡模板的用户购卡详情；否则查询所有的购卡详情。
+出于系统稳定性考虑，需要注意如下两点：(1)查询时间间隔必传，并且时间间隔最大允许一年；(2)分页大小最大不能超过50，页号最大不能超过200
+- [youzan.cardvoucher.valuecard.buy.statistic.query.3.0.0](docs/apis/yz-cardvoucher-biz/youzan.cardvoucher.valuecard.buy.statistic.query_3_0_0.md) | yz-cardvoucher-biz | stored_value_card | 查询该店铺下某个卡模板的售卡销量统计数据，返回的数据中包含每个卡封面卡面额对应的售卡汇总数据。
+出于系统的稳定性考虑，需要注意如下两点：(1)卡模板号必传；（2）查询时间范围必传，并且时间间隔最长为一年
+- [youzan.cardvoucher.valuecard.fund.adjust.3.0.0](docs/apis/yz-cardvoucher-biz/youzan.cardvoucher.valuecard.fund.adjust_3_0_0.md) | yz-cardvoucher-biz | stored_value_card | 连锁门店网店模式的总部，没有经营权限的，不能使用该接口。
+如发生下述任一情况而导致服务中断及开发者损失的，有赞不承担责任：
+（1）发生不可抗力情形的；
+（2）黑客攻击、计算机病毒侵入或发作的；
+（3）计算机系统遭到破坏、瘫痪或无法正常使用的；
+（4）电信部门技术调整的；
+（5）因政府管制而造成暂时性关闭的；
+（6）其它非因有赞的过错而引起的。
+此为老版，推荐使用3.0.1新版本
+
+- [youzan.cardvoucher.valuecard.fund.adjust.3.0.1](docs/apis/yz-cardvoucher-biz/youzan.cardvoucher.valuecard.fund.adjust_3_0_1.md) | yz-cardvoucher-biz | stored_value_card | 该接口支持微商城单店、微商城连锁、零售调用，用于储值卡调账，连锁门店网店模式的总部，没有经营权限的，不能使用该接口。
+如发生下述任一情况而导致服务中断及开发者损失的，有赞不承担责任：
+（1）发生不可抗力情形的；
+（2）黑客攻击、计算机病毒侵入或发作的；
+（3）计算机系统遭到破坏、瘫痪或无法正常使用的；
+（4）电信部门技术调整的；
+（5）因政府管制而造成暂时性关闭的；
+（6）其它非因有赞的过错而引起的。
+版本新增：yz_open_id（有赞开放ID）参数
+
+- [youzan.cardvoucher.valuecard.fund.pay.3.0.0](docs/apis/yz-cardvoucher-biz/youzan.cardvoucher.valuecard.fund.pay_3_0_0.md) | yz-cardvoucher-biz | stored_value_card | 储值卡支付。
+连锁门店网店模式的总部，没有经营权限的，不能使用该接口。
+如发生下述任一情况而导致服务中断及开发者损失的，有赞不承担责任：
+（1）发生不可抗力情形的；
+（2）黑客攻击、计算机病毒侵入或发作的；
+（3）计算机系统遭到破坏、瘫痪或无法正常使用的；
+（4）电信部门技术调整的；
+（5）因政府管制而造成暂时性关闭的；
+（6）其它非因有赞的过错而引起的。
+此为老版，推荐使用3.0.1新版本
+- [youzan.cardvoucher.valuecard.fund.pay.3.0.1](docs/apis/yz-cardvoucher-biz/youzan.cardvoucher.valuecard.fund.pay_3_0_1.md) | yz-cardvoucher-biz | stored_value_card | 该接口支持微商城单店、微商城连锁、零售调用，适用于根据商品名称、用户手机号码等使用储值卡支付。连锁门店网店模式的总部，没有经营权限的，不能使用该接口。
+出于系统稳定性考虑，需要注意如下：(1)按卡号核销(默认)，允许支付的储值卡最多不能超过20张;(2)按用户核销，允许支付的储值卡最多不能超过100张。
+商家想按用户核销，需要进行如下操作：
+（1）入参字段payMode=2
+（2）加入白名单（需联系有赞云同事添加）
+如果用户的储值卡有限品类、限店铺等相关限制，禁用按用户核销功能。
+如发生下述任一情况而导致服务中断及开发者损失的，有赞不承担责任：
+（1）发生不可抗力情形的；
+（2）黑客攻击、计算机病毒侵入或发作的；
+（3）计算机系统遭到破坏、瘫痪或无法正常使用的；
+（4）电信部门技术调整的；
+（5）因政府管制而造成暂时性关闭的；
+（6）其它非因有赞的过错而引起的。
+版本新增：yz_open_id（有赞开放ID）参数
+- [youzan.cardvoucher.valuecard.fund.pay.get.3.0.0](docs/apis/yz-cardvoucher-biz/youzan.cardvoucher.valuecard.fund.pay.get_3_0_0.md) | yz-cardvoucher-biz | stored_value_card | 支付结果查询，支付受理成功后（youzan.cardvoucher.valuecard.fund.pay），通过此接口获取最后支付结果。也可以通过监听支付结果消息来确认支付结果，两种方式结果完全一致
+- [youzan.cardvoucher.valuecard.fund.pay.query.3.0.0](docs/apis/yz-cardvoucher-biz/youzan.cardvoucher.valuecard.fund.pay.query_3_0_0.md) | yz-cardvoucher-biz | stored_value_card | 根据条件批量查询支付结果记录，只能查询通过调用youzan.cardvoucher.valuecard.fund.pay接口产生的支付记录
+- [youzan.cardvoucher.valuecard.fund.recharge.3.0.0](docs/apis/yz-cardvoucher-biz/youzan.cardvoucher.valuecard.fund.recharge_3_0_0.md) | yz-cardvoucher-biz | stored_value_card | 储值充值受理接口，目前仅支持类似支付10元储值入账10元的功能，暂不支持储值规则。当前接口仅做充值受理，是否最后充值入账成功可以查询youzan.cardvoucher.valuecard.fund.recharge.get接口，或者接收储值充值结果消息
+如发生下述任一情况而导致服务中断及开发者损失的，有赞不承担责任：
+（1）发生不可抗力情形的；
+（2）黑客攻击、计算机病毒侵入或发作的；
+（3）计算机系统遭到破坏、瘫痪或无法正常使用的；
+（4）电信部门技术调整的；
+（5）因政府管制而造成暂时性关闭的；
+（6）其它非因有赞的过错而引起的。
+此为老版，推荐使用3.0.1新版本
+- [youzan.cardvoucher.valuecard.fund.recharge.3.0.1](docs/apis/yz-cardvoucher-biz/youzan.cardvoucher.valuecard.fund.recharge_3_0_1.md) | yz-cardvoucher-biz | stored_value_card | 该接口支持微商城单店、微商城连锁、零售调用，适用于根据account_id等给用户充值，目前仅支持类似支付10元储值入账10元的功能，暂不支持储值规则。当前接口仅做充值受理，是否最后充值入账成功可以查询youzan.cardvoucher.valuecard.fund.recharge.get接口，或者接收储值充值结果消息。
+如发生下述任一情况而导致服务中断及开发者损失的，有赞不承担责任：
+（1）发生不可抗力情形的；
+（2）黑客攻击、计算机病毒侵入或发作的；
+（3）计算机系统遭到破坏、瘫痪或无法正常使用的；
+（4）电信部门技术调整的；
+（5）因政府管制而造成暂时性关闭的；
+（6）其它非因有赞的
+- [youzan.cardvoucher.valuecard.fund.recharge.get.3.0.0](docs/apis/yz-cardvoucher-biz/youzan.cardvoucher.valuecard.fund.recharge.get_3_0_0.md) | yz-cardvoucher-biz | stored_value_card | 充值结果查询，充值受理成功后（youzan.cardvoucher.valuecard.fund.recharge），通过此接口获取最后充值结果。也可以通过监听充值结果消息来确认充值结果，两种方式结果完全一致。注意：仅支持查询通过有赞云API接口充值的订单。
+推荐使用新版本（3.0.1）
+- [youzan.cardvoucher.valuecard.fund.recharge.get.3.0.1](docs/apis/yz-cardvoucher-biz/youzan.cardvoucher.valuecard.fund.recharge.get_3_0_1.md) | yz-cardvoucher-biz | stored_value_card | 该接口支持微商城单店、微商城连锁、零售调用，适用于根据充值订单号或充值请求号查询充值结果，充值受理成功后（youzan.cardvoucher.valuecard.fund.recharge），通过此接口获取最后充值结果。也可以通过监听充值结果消息来确认充值结果，两种方式结果完全一致
+版本新增：操作人、充值时间、店铺与客户信息、卡号等返回。注意：仅支持查询通过有赞云API接口充值的订单。
