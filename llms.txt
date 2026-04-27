@@ -1,6 +1,6 @@
 # Youzanyun Open Platform API Index
 
-> 1804 APIs, 18 groups
+> 1804 APIs, 17 groups
 
 ## 其它 (285 APIs)
 
@@ -1821,6 +1821,97 @@ Ps. 该接口已废弃，请用youzan.guide.shoppingguide.
 查询订单
 - `youzan.user.customer.get.offline.1.0.0` -- 斯凯奇定制接口，查询用户是否属于斯凯奇的线下客户。仅供斯凯奇使用
 
+## 交易订单 (68 APIs)
+
+- `youzan.bigdata.team.org.data.list.1.0.0` -- 云上专柜定制交易数据报表
+- `youzan.crm.out.biz.no.query.order.1.0.0` -- 根据外部订单号查询有赞订单号
+- `youzan.ebiz.outOrder.operate.status.1.0.0` -- 酒店项目订单状态流转
+- `youzan.ebiz.trade.create.1.0.0` -- 外部订单创建
+- `youzan.gateway.pressure.test.1.0.0` -- 网关测试
+- `youzan.item.test.get.test.1.0.0` -- test
+- `youzan.logistics.online.loacl.distorder.deliveryfee.3.0.0` -- 计算同城配送渠道收费
+- `youzan.logistics.online.local.confirm.3.0.1` -- 同城三方配送呼叫,仅适用于三方配送呼叫，同城自配送请勿使用。
+- `youzan.logistics.online.local.distorder.cancel.3.0.0` -- 用于卖家主动取消同城配送呼叫。仅适用于三方配送呼叫。同城自配送请勿使用。
+- `youzan.logistics.online.update.3.0.1` -- 修改物流信息，注意：修改物流需要对订单整单发货完成才可以调用该更新接口。即订单状态是（WAIT_BU
+- `youzan.retail.kds.confirm.task.1.0.0` -- 使用场景:外部系统接入有赞订单、商品信息,整合自身kds系统
+本接口使用方式:
+1.拉取完kds同步
+- `youzan.retail.kds.confirm.task.1.0.1` -- 使用场景:外部系统接入有赞订单、商品信息,整合自身kds系统 本接口使用方式: 
+1.拉取完kds同
+- `youzan.retail.kds.confirm.task.6.1.88` -- 使用场景:外部系统接入有赞订单、商品信息,整合自身kds系统 本接口使用方式: 
+1.拉取完kds同
+- `youzan.retail.kds.query.task.1.0.0` -- 使用场景:外部系统接入有赞订单、商品信息,整合自身kds系统
+本接口使用方式:
+1.有赞侧先开通kd
+- `youzan.retail.kds.query.task.6.2.88` -- 使用场景:外部系统接入有赞订单、商品信息,整合自身kds系统
+本接口使用方式:
+1.有赞侧先开通kd
+- `youzan.retail.open.update.localDeliveryStatus.1.0.0` -- 同城配送订单状态和骑手位置同步，用于商家有自己的配送系统，可以实时回传配送信息到有赞，买家端可以实时
+- `youzan.retail.trade.get.orderno.1.0.0` -- 将购物小票的短链条形码，解码为真实订单号
+- `youzan.scrm.order.search.1.0.0` -- CRM-全渠道订单查询接口，可查询线下订单与三方订单，定制使用需申请
+- `youzan.scrm.order.trade.out.create.1.0.0` -- 区别外部开单接口，更加适用于CRM的订单导入，两者参数保持一致，如果有需求可以直接切换。接口仅支持指
+- `youzan.trade.cart.add.3.0.0` -- 购物车添加商品，支持无规格和多规格商品，(无规格商品请使用youzan.item.get 接口获取商
+- `youzan.trade.cart.all.update.select.1.0.0` -- 更新购物车中的所有商品的选中状态
+- `youzan.trade.cart.count.3.0.0` -- 查询购物车中商品种类数量，即商品种类总和，包含已失效的商品
+- `youzan.trade.cart.goods.update.select.1.0.0` -- 更新购物车中的单个或多个商品的选中状态，需要传入具体的商品信息
+- `youzan.trade.cart.sku.update.1.0.0` -- 购物车更新商品规格
+- `youzan.trade.dc.delivery.ordersingleitemsend.3.0.1` -- 用于一笔订单一种商品有多个数量进行拆单发货，支持选择多家物流发货。支持分开调用，使用（num）数量参
+- `youzan.trade.dc.delivery.ordersingleitemsend.3.0.2` -- 用于一笔订单一种商品有多个数量进行拆单发货，支持选择多家物流发货。即一笔订单中，同种商品有多个时，必
+- `youzan.trade.dc.operate.orderpartsend.1.0.0` -- 订单部分发货，支持以下场景
+1.单商品拆分多运单全部发货，使用该能力，需要在有赞店铺后台开通多包裹能
+- `youzan.trade.dc.operate.ordersingleitempartsend.1.0.0` -- （中智集团专用，非标准能力）用于一笔订单一种商品有多个数量进行分批部分发货，仅支持一个包裹单。一笔订
+- `youzan.trade.dc.query.multiperiod.querydeliveryrecords.1.0.0` -- 根据订单号查询订单下各个子订单的最新一期的发货记录
+- `youzan.trade.exchangegoods.confirm.3.0.0` -- 微商城换货，买家寄回后，商家确认收货并重新发货
+- `youzan.trade.invoice.apply.1.0.0` -- 订单开票接口
+https://doc.qima-inc.com/pages/viewpage.act
+- `youzan.trade.invoice.callback.1.0.0` -- 发票申请处理后，三方将开票结果回执给有赞
+- `youzan.trade.invoice.list.1.0.0` -- 批量查询电子发票接口
+- `youzan.trade.invoice.list.record.1.0.0` -- 根据订单号查询开票记录
+- `youzan.trade.order.address.update.1.0.0` -- 修改订单收货地址。订单收货地址仅支持修改一次，商户可以调用该接口修改订单的收货地址，此接口仅提供修改
+- `youzan.trade.order.mark.paid.confirm.1.0.0` -- 订单标记支付，调用后订单状态推进到已完成。仅支持外部订单
+- `youzan.trade.order.operate.pay.1.0.0` -- 外部订单支付接口，将订单流转到已支付状态。支付后，订单状态会根据对应下单流程的交付方式流转。例如物流
+- `youzan.trade.order.operate.success.1.0.0` -- 【大客专属，需内部技术添加白名单】订单流转到交易完成，仅支持外部订单导入至有赞系统后将状态同步为交易
+- `youzan.trade.order.out.create.1.0.0` -- 外部系统订单导入有赞系统生成订单。接口仅支持指定合作方使用，自营商家使用需购买大客定制套餐服务。
+- `youzan.trade.order.out.create.3.0.0` -- 外部系统订单导入有赞系统生成订单。接口仅支持指定合作方使用，自营商家使用需购买大客定制套餐服务或有赞
+- `youzan.trade.order.out.create.3.0.1` -- 外部系统订单导入有赞系统生成订单。接口仅支持指定合作方使用，自营商家使用需购买大客定制套餐服务或有赞
+- `youzan.trade.order.query.info.1.0.0` -- 查询支付收单信息
+- `youzan.trade.order.update.orderExtend.1.0.0` -- 新增或更新订单扩展字段接口。需要修改订单的扩展字段就传入extras字段。 注：扩展字段当前仅支持S
+- `youzan.trade.qrcode.delete.1.0.0` -- 删除收款二维码
+
+- `youzan.trade.qrcode.pay.list.1.0.0` -- 查询收款二维码记录
+- `youzan.trade.refund.amount.get.1.0.0` -- 订单售后聚合信息查询
+- `youzan.trade.refund.consult.message.create.1.0.0` -- 新增售后协商记录，仅限胜道体育商家定制使用。
+- `youzan.trade.refund.get.3.0.0` -- 基于维权ID查询该笔售后单的状态、金额等详情
+- `youzan.trade.refund.get.3.0.1` -- 根据售后单ID查询该笔售后单的状态、金额等详情
+- `youzan.trade.refund.messages.get.3.0.0` -- 查看退款凭证列表接口
+- `youzan.trade.refund.search.3.0.0` -- 查看退款列表（如果入参没有设置查询时间范围，接口默认查询创建时间为近3个月的订单）
+- `youzan.trade.refund.search.3.0.1` -- 查询售后单列表（如果入参没有设置查询时间范围，接口默认查询创建时间为近3个月的订单）
+- `youzan.trade.refund.seller.modify.1.0.0` -- 商家修改售后申请的金额和数量，仅限胜道体育商家定制使用。
+【注：本接口修改申请后不会有售后协商记录，
+- `youzan.trade.refund.seller.operate.1.0.0` -- 售后统一操作接口，用于对售后单进行审核操作。
+请根据售后集成方案描述，查询售后详情来判断可执行的操作
+- `youzan.trade.refundgoods.update.1.0.0` -- 商家主动退货退款接口， 默认货款原路退回  (该接口不支持分销单退货退款,不支持卡券退货退款)
+  
+- `youzan.trade.relation.get.1.0.0` -- 使用场景：
+1.同一个店铺分销商品和普通商品一起下单
+2.同一个店铺虚拟商品和普通商品一起下单
+3.
+- `youzan.trade.selffetch.verify.get.record.1.0.0` -- 查询自提核销记录
+- `youzan.trade.ticket.verify.get.record.1.0.0` -- 查询电子卡券的核销人信息
+- `youzan.trade.virtual.verify.get.record.1.0.0` -- 查询虚拟商品核销记录
+- `youzan.trade.virtualticket.third.batch.verify.3.0.0` -- 根据订单号批量核销三方电子卡券
+- `youzan.trade.virtualticket.third.cover.3.0.1` -- 电子卡券外部卡券状态同步请开发者根据实际订单下单店铺的ID进行获取token后调用本接口(该接口只会
+- `youzan.trade.virtualticket.third.create.3.0.1` -- 请使用3.0.2版本。3.0.1版本已停止维护。
+- `youzan.trade.virtualticket.third.create.3.0.2` -- 创建三方电子卡券
+- `youzan.trades.sold.get.4.0.0` -- 订单搜索接口
+排序规则基于订单创建时间和更新时间。
+创建时间可以获取指定时间内所有的订单。
+更新时间
+- `youzan.trades.sold.get.4.0.1` -- 订单搜索接口，升级yz_open_id，该接口目前不支持返回buyer_id。 排序规则基于订单创建
+- `youzan.trades.sold.get.4.0.2` -- 订单搜索接口，升级yz_open_id，该接口目前不支持返回buyer_id。 排序规则基于订单创建
+- `youzan.trades.sold.get.4.0.3` -- 订单搜索接口，升级yz_open_id，该接口目前不支持返回buyer_id。 排序规则基于订单创建
+- `youzan.trades.sold.get.4.0.4` -- 订单搜索接口，升级yz_open_id，该接口目前不支持返回buyer_id。 排序规则基于订单创建
+
 ## 物流配送 (65 APIs)
 
 - `youzan.logistics.cainiao.callback.customsClearance.1.0.0` -- 菜鸟link平台专用
@@ -1890,92 +1981,6 @@ Ps. 该接口已废弃，请用youzan.guide.shoppingguide.
 - `youzan.trade.selffetch.search.1.0.0` -- 根据经纬度、关键字搜索自提点列表，支持按经纬度距离排序
 - `youzan.trade.selffetchcode.get.4.0.0` -- 通过自提码查询详情
 - `youzan.user.contact.get.1.0.0` -- 查询自提人列表接口
-
-## 交易订单 (63 APIs)
-
-- `youzan.bigdata.team.org.data.list.1.0.0` -- 云上专柜定制交易数据报表
-- `youzan.crm.out.biz.no.query.order.1.0.0` -- 根据外部订单号查询有赞订单号
-- `youzan.ebiz.outOrder.operate.status.1.0.0` -- 酒店项目订单状态流转
-- `youzan.ebiz.trade.create.1.0.0` -- 外部订单创建
-- `youzan.gateway.pressure.test.1.0.0` -- 网关测试
-- `youzan.item.test.get.test.1.0.0` -- test
-- `youzan.logistics.online.loacl.distorder.deliveryfee.3.0.0` -- 计算同城配送渠道收费
-- `youzan.logistics.online.local.confirm.3.0.1` -- 同城三方配送呼叫,仅适用于三方配送呼叫，同城自配送请勿使用。
-- `youzan.logistics.online.local.distorder.cancel.3.0.0` -- 用于卖家主动取消同城配送呼叫。仅适用于三方配送呼叫。同城自配送请勿使用。
-- `youzan.logistics.online.update.3.0.1` -- 修改物流信息，注意：修改物流需要对订单整单发货完成才可以调用该更新接口。即订单状态是（WAIT_BU
-- `youzan.retail.kds.confirm.task.1.0.0` -- 使用场景:外部系统接入有赞订单、商品信息,整合自身kds系统
-本接口使用方式:
-1.拉取完kds同步
-- `youzan.retail.kds.confirm.task.1.0.1` -- 使用场景:外部系统接入有赞订单、商品信息,整合自身kds系统 本接口使用方式: 
-1.拉取完kds同
-- `youzan.retail.kds.confirm.task.6.1.88` -- 使用场景:外部系统接入有赞订单、商品信息,整合自身kds系统 本接口使用方式: 
-1.拉取完kds同
-- `youzan.retail.kds.query.task.1.0.0` -- 使用场景:外部系统接入有赞订单、商品信息,整合自身kds系统
-本接口使用方式:
-1.有赞侧先开通kd
-- `youzan.retail.kds.query.task.6.2.88` -- 使用场景:外部系统接入有赞订单、商品信息,整合自身kds系统
-本接口使用方式:
-1.有赞侧先开通kd
-- `youzan.retail.open.update.localDeliveryStatus.1.0.0` -- 同城配送订单状态和骑手位置同步，用于商家有自己的配送系统，可以实时回传配送信息到有赞，买家端可以实时
-- `youzan.retail.trade.get.orderno.1.0.0` -- 将购物小票的短链条形码，解码为真实订单号
-- `youzan.scrm.order.search.1.0.0` -- CRM-全渠道订单查询接口，可查询线下订单与三方订单，定制使用需申请
-- `youzan.scrm.order.trade.out.create.1.0.0` -- 区别外部开单接口，更加适用于CRM的订单导入，两者参数保持一致，如果有需求可以直接切换。接口仅支持指
-- `youzan.trade.cart.add.3.0.0` -- 购物车添加商品，支持无规格和多规格商品，(无规格商品请使用youzan.item.get 接口获取商
-- `youzan.trade.cart.all.update.select.1.0.0` -- 更新购物车中的所有商品的选中状态
-- `youzan.trade.cart.count.3.0.0` -- 查询购物车中商品种类数量，即商品种类总和，包含已失效的商品
-- `youzan.trade.cart.goods.update.select.1.0.0` -- 更新购物车中的单个或多个商品的选中状态，需要传入具体的商品信息
-- `youzan.trade.cart.sku.update.1.0.0` -- 购物车更新商品规格
-- `youzan.trade.dc.delivery.ordersingleitemsend.3.0.1` -- 用于一笔订单一种商品有多个数量进行拆单发货，支持选择多家物流发货。支持分开调用，使用（num）数量参
-- `youzan.trade.dc.delivery.ordersingleitemsend.3.0.2` -- 用于一笔订单一种商品有多个数量进行拆单发货，支持选择多家物流发货。即一笔订单中，同种商品有多个时，必
-- `youzan.trade.dc.operate.orderpartsend.1.0.0` -- 订单部分发货，支持以下场景
-1.单商品拆分多运单全部发货，使用该能力，需要在有赞店铺后台开通多包裹能
-- `youzan.trade.dc.operate.ordersingleitempartsend.1.0.0` -- （中智集团专用，非标准能力）用于一笔订单一种商品有多个数量进行分批部分发货，仅支持一个包裹单。一笔订
-- `youzan.trade.dc.query.multiperiod.querydeliveryrecords.1.0.0` -- 根据订单号查询订单下各个子订单的最新一期的发货记录
-- `youzan.trade.exchangegoods.confirm.3.0.0` -- 微商城换货，买家寄回后，商家确认收货并重新发货
-- `youzan.trade.invoice.apply.1.0.0` -- 订单开票接口
-https://doc.qima-inc.com/pages/viewpage.act
-- `youzan.trade.invoice.list.1.0.0` -- 批量查询电子发票接口
-- `youzan.trade.invoice.list.record.1.0.0` -- 根据订单号查询开票记录
-- `youzan.trade.order.address.update.1.0.0` -- 修改订单收货地址。订单收货地址仅支持修改一次，商户可以调用该接口修改订单的收货地址，此接口仅提供修改
-- `youzan.trade.order.mark.paid.confirm.1.0.0` -- 订单标记支付，调用后订单状态推进到已完成。仅支持外部订单
-- `youzan.trade.order.operate.pay.1.0.0` -- 外部订单支付接口，将订单流转到已支付状态。支付后，订单状态会根据对应下单流程的交付方式流转。例如物流
-- `youzan.trade.order.operate.success.1.0.0` -- 【大客专属，需内部技术添加白名单】订单流转到交易完成，仅支持外部订单导入至有赞系统后将状态同步为交易
-- `youzan.trade.order.out.create.1.0.0` -- 外部系统订单导入有赞系统生成订单。接口仅支持指定合作方使用，自营商家使用需购买大客定制套餐服务。
-- `youzan.trade.order.out.create.3.0.0` -- 外部系统订单导入有赞系统生成订单。接口仅支持指定合作方使用，自营商家使用需购买大客定制套餐服务或有赞
-- `youzan.trade.order.out.create.3.0.1` -- 外部系统订单导入有赞系统生成订单。接口仅支持指定合作方使用，自营商家使用需购买大客定制套餐服务或有赞
-- `youzan.trade.order.query.info.1.0.0` -- 查询支付收单信息
-- `youzan.trade.order.update.orderExtend.1.0.0` -- 新增或更新订单扩展字段接口。需要修改订单的扩展字段就传入extras字段。 注：扩展字段当前仅支持S
-- `youzan.trade.qrcode.delete.1.0.0` -- 删除收款二维码
-
-- `youzan.trade.qrcode.pay.list.1.0.0` -- 查询收款二维码记录
-- `youzan.trade.refund.amount.get.1.0.0` -- 订单售后聚合信息查询
-- `youzan.trade.refund.consult.message.create.1.0.0` -- 新增售后协商记录，仅限胜道体育商家定制使用。
-- `youzan.trade.refund.get.3.0.0` -- 基于维权ID查询该笔售后单的状态、金额等详情
-- `youzan.trade.refund.get.3.0.1` -- 根据售后单ID查询该笔售后单的状态、金额等详情
-- `youzan.trade.refund.messages.get.3.0.0` -- 查看退款凭证列表接口
-- `youzan.trade.refund.search.3.0.0` -- 查看退款列表（如果入参没有设置查询时间范围，接口默认查询创建时间为近3个月的订单）
-- `youzan.trade.refund.search.3.0.1` -- 查询售后单列表（如果入参没有设置查询时间范围，接口默认查询创建时间为近3个月的订单）
-- `youzan.trade.refund.seller.modify.1.0.0` -- 商家修改售后申请的金额和数量，仅限胜道体育商家定制使用。
-【注：本接口修改申请后不会有售后协商记录，
-- `youzan.trade.refund.seller.operate.1.0.0` -- 售后统一操作接口，用于对售后单进行审核操作。
-请根据售后集成方案描述，查询售后详情来判断可执行的操作
-- `youzan.trade.refundgoods.update.1.0.0` -- 商家主动退货退款接口， 默认货款原路退回  (该接口不支持分销单退货退款,不支持卡券退货退款)
-  
-- `youzan.trade.relation.get.1.0.0` -- 使用场景：
-1.同一个店铺分销商品和普通商品一起下单
-2.同一个店铺虚拟商品和普通商品一起下单
-3.
-- `youzan.trade.selffetch.verify.get.record.1.0.0` -- 查询自提核销记录
-- `youzan.trade.ticket.verify.get.record.1.0.0` -- 查询电子卡券的核销人信息
-- `youzan.trade.virtual.verify.get.record.1.0.0` -- 查询虚拟商品核销记录
-- `youzan.trades.sold.get.4.0.0` -- 订单搜索接口
-排序规则基于订单创建时间和更新时间。
-创建时间可以获取指定时间内所有的订单。
-更新时间
-- `youzan.trades.sold.get.4.0.1` -- 订单搜索接口，升级yz_open_id，该接口目前不支持返回buyer_id。 排序规则基于订单创建
-- `youzan.trades.sold.get.4.0.2` -- 订单搜索接口，升级yz_open_id，该接口目前不支持返回buyer_id。 排序规则基于订单创建
-- `youzan.trades.sold.get.4.0.3` -- 订单搜索接口，升级yz_open_id，该接口目前不支持返回buyer_id。 排序规则基于订单创建
-- `youzan.trades.sold.get.4.0.4` -- 订单搜索接口，升级yz_open_id，该接口目前不支持返回buyer_id。 排序规则基于订单创建
 
 ## 教育 (53 APIs)
 
@@ -2257,14 +2262,6 @@ https://developers.weixin.q
 - `youzan.trade.refund.list.enjoybuy.1.0.0` -- 根据订单号查询退款记录
 - `youzan.trade.refund.seller.active.3.0.0` -- 商家主动退款
 - `youzan.trade.refund.seller.active.3.0.1` -- 商家主动退款
-
-## trading_setting_advanced (5 APIs)
-
-- `youzan.trade.invoice.callback.1.0.0` -- 发票申请处理后，三方将开票结果回执给有赞
-- `youzan.trade.virtualticket.third.batch.verify.3.0.0` -- 根据订单号批量核销三方电子卡券
-- `youzan.trade.virtualticket.third.cover.3.0.1` -- 电子卡券外部卡券状态同步请开发者根据实际订单下单店铺的ID进行获取token后调用本接口(该接口只会
-- `youzan.trade.virtualticket.third.create.3.0.1` -- 请使用3.0.2版本。3.0.1版本已停止维护。
-- `youzan.trade.virtualticket.third.create.3.0.2` -- 创建三方电子卡券
 
 ## 跨境报关 (4 APIs)
 
