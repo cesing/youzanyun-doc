@@ -3,16 +3,13 @@ apiName: "youzan.message.knowledge.delete.1.0.0"
 version: "1.0.0"
 appName: "courier-cp"
 apiGroup: "消息推送"
-method: "delKnowledgeBaseOpen"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4736"
 ---
 
 # youzan.message.knowledge.delete.1.0.0
 
-> **所属分组**: 消息推送  **所属应用**: courier-cp
+> **所属分组**: 消息推送
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4736"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.message.knowledge.delete/1.0.0`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

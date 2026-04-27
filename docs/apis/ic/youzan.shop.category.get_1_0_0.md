@@ -3,16 +3,13 @@ apiName: "youzan.shop.category.get.1.0.0"
 version: "1.0.0"
 appName: "ic"
 apiGroup: "商品与库存"
-method: "isNewCategoryKdtWhite"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/1481"
 ---
 
 # youzan.shop.category.get.1.0.0
 
-> **所属分组**: 商品与库存  **所属应用**: ic
+> **所属分组**: 商品与库存
 
 ---
 
@@ -30,6 +27,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/1481"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.shop.category.get/1.0.0`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

@@ -3,16 +3,13 @@ apiName: "youzan.gateway.pressure.test.1.0.0"
 version: "1.0.0"
 appName: "trade-task"
 apiGroup: "交易订单"
-method: "invoke"
-timeout: 5000
 authType: "无认证"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/625"
 ---
 
 # youzan.gateway.pressure.test.1.0.0
 
-> **所属分组**: 交易订单  **所属应用**: trade-task
+> **所属分组**: 交易订单
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/625"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.gateway.pressure.test/1.0.0`
+
+**认证方式**: 无认证
 
 **请求参数**（0 个）:
 

@@ -3,16 +3,13 @@ apiName: "youzan.pay.workorder.operate.flow.1.0.0"
 version: "1.0.0"
 appName: "pay-gateway"
 apiGroup: "消息推送"
-method: "bifrostInvoke"
-timeout: 5000
 authType: "无认证"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4658"
 ---
 
 # youzan.pay.workorder.operate.flow.1.0.0
 
-> **所属分组**: 消息推送  **所属应用**: pay-gateway
+> **所属分组**: 消息推送
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4658"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.pay.workorder.operate.flow/1.0.0`
+
+**认证方式**: 无认证
 
 **请求参数**（0 个）:
 

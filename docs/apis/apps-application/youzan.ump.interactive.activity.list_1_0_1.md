@@ -3,16 +3,13 @@ apiName: "youzan.ump.interactive.activity.list.1.0.1"
 version: "1.0.1"
 appName: "apps-application"
 apiGroup: "营销优惠"
-method: "getActivityPage"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3088"
 ---
 
 # youzan.ump.interactive.activity.list.1.0.1
 
-> **所属分组**: 营销优惠  **所属应用**: apps-application
+> **所属分组**: 营销优惠
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3088"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.ump.interactive.activity.list/1.0.1`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

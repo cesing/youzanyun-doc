@@ -3,16 +3,13 @@ apiName: "youzan.cloud.connector.update.version.1.0.0"
 version: "1.0.0"
 appName: "cloud-connector-pangoo"
 apiGroup: "大客CRM"
-method: "reportSdkVersion"
-timeout: 5000
 authType: "无认证"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4045"
 ---
 
 # youzan.cloud.connector.update.version.1.0.0
 
-> **所属分组**: 大客CRM  **所属应用**: cloud-connector-pangoo
+> **所属分组**: 大客CRM
 
 ---
 
@@ -27,6 +24,8 @@ iPaaS应用上报更新SDK版本（仅iPaaS应用专用）
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.cloud.connector.update.version/1.0.0`
+
+**认证方式**: 无认证
 
 **请求参数**（0 个）:
 

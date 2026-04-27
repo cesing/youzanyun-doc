@@ -3,16 +3,13 @@ apiName: "youzan.salesman.saleschannel.get.detail.1.0.0"
 version: "1.0.0"
 appName: "salesman-makani"
 apiGroup: "分销与供货"
-method: "getSalesChannelDetail"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3368"
 ---
 
 # youzan.salesman.saleschannel.get.detail.1.0.0
 
-> **所属分组**: 分销与供货  **所属应用**: salesman-makani
+> **所属分组**: 分销与供货
 
 ---
 
@@ -29,6 +26,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3368"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.salesman.saleschannel.get.detail/1.0.0`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

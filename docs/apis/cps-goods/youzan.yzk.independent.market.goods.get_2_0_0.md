@@ -3,16 +3,13 @@ apiName: "youzan.yzk.independent.market.goods.get.2.0.0"
 version: "2.0.0"
 appName: "cps-goods"
 apiGroup: "其它"
-method: "getGoodsPoolWithIndex"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/1061"
 ---
 
 # youzan.yzk.independent.market.goods.get.2.0.0
 
-> **所属分组**: 其它  **所属应用**: cps-goods
+> **所属分组**: 其它
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/1061"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.yzk.independent.market.goods.get/2.0.0`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

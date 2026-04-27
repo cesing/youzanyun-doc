@@ -3,16 +3,13 @@ apiName: "youzan.cloud.auth.grant.query.1.0.0"
 version: "1.0.0"
 appName: "authority-center"
 apiGroup: "大客CRM"
-method: "queryGrantPageList"
-timeout: 5000
 authType: "无认证"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/1483"
 ---
 
 # youzan.cloud.auth.grant.query.1.0.0
 
-> **所属分组**: 大客CRM  **所属应用**: authority-center
+> **所属分组**: 大客CRM
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/1483"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.cloud.auth.grant.query/1.0.0`
+
+**认证方式**: 无认证
 
 **请求参数**（0 个）:
 

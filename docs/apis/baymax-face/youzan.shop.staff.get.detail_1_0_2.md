@@ -3,16 +3,13 @@ apiName: "youzan.shop.staff.get.detail.1.0.2"
 version: "1.0.2"
 appName: "baymax-face"
 apiGroup: "店铺信息"
-method: "getStaffDetailInfo"
-timeout: 3000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/2256"
 ---
 
 # youzan.shop.staff.get.detail.1.0.2
 
-> **所属分组**: 店铺信息  **所属应用**: baymax-face
+> **所属分组**: 店铺信息
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/2256"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.shop.staff.get.detail/1.0.2`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

@@ -3,16 +3,13 @@ apiName: "youzan.message.autoreply.apply.subscribe.1.0.0"
 version: "1.0.0"
 appName: "msg-autoreply"
 apiGroup: "消息推送"
-method: "autoReplySubScribeEngine"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/2276"
 ---
 
 # youzan.message.autoreply.apply.subscribe.1.0.0
 
-> **所属分组**: 消息推送  **所属应用**: msg-autoreply
+> **所属分组**: 消息推送
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/2276"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.message.autoreply.apply.subscribe/1.0.0`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

@@ -3,16 +3,13 @@ apiName: "youzan.retail.groupbuy.query.headers.1.0.0"
 version: "1.0.0"
 appName: "mall-rigel"
 apiGroup: "营销优惠"
-method: "queryHeaders"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/2826"
 ---
 
 # youzan.retail.groupbuy.query.headers.1.0.0
 
-> **所属分组**: 营销优惠  **所属应用**: mall-rigel
+> **所属分组**: 营销优惠
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/2826"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.retail.groupbuy.query.headers/1.0.0`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

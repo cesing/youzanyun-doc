@@ -3,16 +3,13 @@ apiName: "youzan.trade.refund.buyer.items.apply.1.0.0"
 version: "1.0.0"
 appName: "trade-safeguard"
 apiGroup: "支付与退款"
-method: "newRefundCreateV2"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/5048"
 ---
 
 # youzan.trade.refund.buyer.items.apply.1.0.0
 
-> **所属分组**: 支付与退款  **所属应用**: trade-safeguard
+> **所属分组**: 支付与退款
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/5048"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.trade.refund.buyer.items.apply/1.0.0`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

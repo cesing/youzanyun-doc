@@ -3,16 +3,13 @@ apiName: "youzan.saleschannel.account.delete.1.0.0"
 version: "1.0.0"
 appName: "salesman-open"
 apiGroup: "其它"
-method: "deleteSalesChannel"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4877"
 ---
 
 # youzan.saleschannel.account.delete.1.0.0
 
-> **所属分组**: 其它  **所属应用**: salesman-open
+> **所属分组**: 其它
 
 ---
 
@@ -28,6 +25,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4877"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.saleschannel.account.delete/1.0.0`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

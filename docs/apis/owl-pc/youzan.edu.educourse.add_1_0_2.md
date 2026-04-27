@@ -3,16 +3,13 @@ apiName: "youzan.edu.educourse.add.1.0.2"
 version: "1.0.2"
 appName: "owl-pc"
 apiGroup: "教育"
-method: "eduCourseInfoSync"
-timeout: 8000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3244"
 ---
 
 # youzan.edu.educourse.add.1.0.2
 
-> **所属分组**: 教育  **所属应用**: owl-pc
+> **所属分组**: 教育
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3244"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.edu.educourse.add/1.0.2`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

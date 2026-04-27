@@ -3,16 +3,13 @@ apiName: "youzan.scrm.user.level.delete.1.0.1"
 version: "1.0.1"
 appName: "scrm-level"
 apiGroup: "会员与客户"
-method: "cancel"
-timeout: 3000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4090"
 ---
 
 # youzan.scrm.user.level.delete.1.0.1
 
-> **所属分组**: 会员与客户  **所属应用**: scrm-level
+> **所属分组**: 会员与客户
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4090"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.scrm.user.level.delete/1.0.1`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

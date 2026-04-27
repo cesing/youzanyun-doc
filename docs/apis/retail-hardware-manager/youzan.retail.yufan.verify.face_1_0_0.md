@@ -3,16 +3,13 @@ apiName: "youzan.retail.yufan.verify.face.1.0.0"
 version: "1.0.0"
 appName: "retail-hardware-manager"
 apiGroup: "其它"
-method: "checkFace"
-timeout: 5000
 authType: "无认证"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/5096"
 ---
 
 # youzan.retail.yufan.verify.face.1.0.0
 
-> **所属分组**: 其它  **所属应用**: retail-hardware-manager
+> **所属分组**: 其它
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/5096"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.retail.yufan.verify.face/1.0.0`
+
+**认证方式**: 无认证
 
 **请求参数**（0 个）:
 

@@ -3,16 +3,13 @@ apiName: "youzan.item.test.get.test.1.0.0"
 version: "1.0.0"
 appName: "gateway-test"
 apiGroup: "交易订单"
-method: "invoke"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/1320"
 ---
 
 # youzan.item.test.get.test.1.0.0
 
-> **所属分组**: 交易订单  **所属应用**: gateway-test
+> **所属分组**: 交易订单
 
 ---
 
@@ -27,6 +24,8 @@ test
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.item.test.get.test/1.0.0`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

@@ -3,16 +3,13 @@ apiName: "youzan.material.category.parent.id.list.1.0.0"
 version: "1.0.0"
 appName: "material-center"
 apiGroup: "店铺信息"
-method: "queryCategoryListWithParentId"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4873"
 ---
 
 # youzan.material.category.parent.id.list.1.0.0
 
-> **所属分组**: 店铺信息  **所属应用**: material-center
+> **所属分组**: 店铺信息
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4873"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.material.category.parent.id.list/1.0.0`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

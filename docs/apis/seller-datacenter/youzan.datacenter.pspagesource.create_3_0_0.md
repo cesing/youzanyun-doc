@@ -3,16 +3,13 @@ apiName: "youzan.datacenter.pspagesource.create.3.0.0"
 version: "3.0.0"
 appName: "seller-datacenter"
 apiGroup: "其它"
-method: "createPageSource"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/174"
 ---
 
 # youzan.datacenter.pspagesource.create.3.0.0
 
-> **所属分组**: 其它  **所属应用**: seller-datacenter
+> **所属分组**: 其它
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/174"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.datacenter.pspagesource.create/3.0.0`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

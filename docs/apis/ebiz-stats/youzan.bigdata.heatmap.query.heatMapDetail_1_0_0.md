@@ -3,16 +3,13 @@ apiName: "youzan.bigdata.heatmap.query.heatMapDetail.1.0.0"
 version: "1.0.0"
 appName: "ebiz-stats"
 apiGroup: "数据分析"
-method: "getHeatMapNew"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4076"
 ---
 
 # youzan.bigdata.heatmap.query.heatMapDetail.1.0.0
 
-> **所属分组**: 数据分析  **所属应用**: ebiz-stats
+> **所属分组**: 数据分析
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4076"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.bigdata.heatmap.query.heatMapDetail/1.0.0`
+
+**认证方式**: 凭证式
 
 **请求参数**（4 个）:
 

@@ -3,16 +3,13 @@ apiName: "youzan.materials.storage.platform.img.upload.3.0.0"
 version: "3.0.0"
 appName: "material-center"
 apiGroup: "其它"
-method: "uploadOpenPlatformBinaryPublicImage"
-timeout: 60000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/193"
 ---
 
 # youzan.materials.storage.platform.img.upload.3.0.0
 
-> **所属分组**: 其它  **所属应用**: material-center
+> **所属分组**: 其它
 
 ---
 
@@ -28,6 +25,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/193"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.materials.storage.platform.img.upload/3.0.0`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

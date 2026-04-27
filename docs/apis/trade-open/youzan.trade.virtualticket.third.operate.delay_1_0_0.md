@@ -3,16 +3,13 @@ apiName: "youzan.trade.virtualticket.third.operate.delay.1.0.0"
 version: "1.0.0"
 appName: "trade-open"
 apiGroup: "其它"
-method: "batchDelayTicketVerify"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/5009"
 ---
 
 # youzan.trade.virtualticket.third.operate.delay.1.0.0
 
-> **所属分组**: 其它  **所属应用**: trade-open
+> **所属分组**: 其它
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/5009"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.trade.virtualticket.third.operate.delay/1.0.0`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

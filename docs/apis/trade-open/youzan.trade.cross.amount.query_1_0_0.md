@@ -3,16 +3,13 @@ apiName: "youzan.trade.cross.amount.query.1.0.0"
 version: "1.0.0"
 appName: "trade-open"
 apiGroup: "跨境报关"
-method: "getCrossBorderAmount"
-timeout: 3000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4529"
 ---
 
 # youzan.trade.cross.amount.query.1.0.0
 
-> **所属分组**: 跨境报关  **所属应用**: trade-open
+> **所属分组**: 跨境报关
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4529"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.trade.cross.amount.query/1.0.0`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

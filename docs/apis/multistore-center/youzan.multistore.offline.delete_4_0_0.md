@@ -3,16 +3,13 @@ apiName: "youzan.multistore.offline.delete.4.0.0"
 version: "4.0.0"
 appName: "multistore-center"
 apiGroup: "零售门店"
-method: "deleteStores"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/2710"
 ---
 
 # youzan.multistore.offline.delete.4.0.0
 
-> **所属分组**: 零售门店  **所属应用**: multistore-center
+> **所属分组**: 零售门店
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/2710"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.multistore.offline.delete/4.0.0`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

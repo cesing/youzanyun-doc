@@ -3,16 +3,13 @@ apiName: "youzan.cardvoucher.valuecard.fund.pay.3.0.1"
 version: "3.0.1"
 appName: "yz-cardvoucher-biz"
 apiGroup: "储值卡"
-method: "pay"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/537"
 ---
 
 # youzan.cardvoucher.valuecard.fund.pay.3.0.1
 
-> **所属分组**: 储值卡  **所属应用**: yz-cardvoucher-biz
+> **所属分组**: 储值卡
 
 ---
 
@@ -40,6 +37,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/537"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.cardvoucher.valuecard.fund.pay/3.0.1`
+
+**认证方式**: 凭证式
 
 **请求参数**（10 个）:
 

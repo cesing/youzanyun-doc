@@ -3,16 +3,13 @@ apiName: "youzan.item.channel.publish.2.0.0"
 version: "2.0.0"
 appName: "mall-item"
 apiGroup: "商品与库存"
-method: "publishChannel"
-timeout: 60000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4655"
 ---
 
 # youzan.item.channel.publish.2.0.0
 
-> **所属分组**: 商品与库存  **所属应用**: mall-item
+> **所属分组**: 商品与库存
 
 ---
 
@@ -28,6 +25,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4655"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.item.channel.publish/2.0.0`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

@@ -3,16 +3,13 @@ apiName: "youzan.crm.customer.points.operate.freeze.4.0.1"
 version: "4.0.1"
 appName: "scrm-open-java"
 apiGroup: "营销优惠"
-method: "freezeV2"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/5002"
 ---
 
 # youzan.crm.customer.points.operate.freeze.4.0.1
 
-> **所属分组**: 营销优惠  **所属应用**: scrm-open-java
+> **所属分组**: 营销优惠
 
 ---
 
@@ -28,6 +25,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/5002"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.crm.customer.points.operate.freeze/4.0.1`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

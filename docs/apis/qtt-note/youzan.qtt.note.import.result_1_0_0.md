@@ -3,16 +3,13 @@ apiName: "youzan.qtt.note.import.result.1.0.0"
 version: "1.0.0"
 appName: "qtt-note"
 apiGroup: "分销与供货"
-method: "getImportResult"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4486"
 ---
 
 # youzan.qtt.note.import.result.1.0.0
 
-> **所属分组**: 分销与供货  **所属应用**: qtt-note
+> **所属分组**: 分销与供货
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4486"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.qtt.note.import.result/1.0.0`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

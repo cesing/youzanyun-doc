@@ -3,16 +3,13 @@ apiName: "youzan.cloud.deliveryconfig.callback.1.0.0"
 version: "1.0.0"
 appName: "cloud-connector-pangoo"
 apiGroup: "消息推送"
-method: "createConfigDeliveryTaskCallback"
-timeout: 5000
 authType: "无认证"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4301"
 ---
 
 # youzan.cloud.deliveryconfig.callback.1.0.0
 
-> **所属分组**: 消息推送  **所属应用**: cloud-connector-pangoo
+> **所属分组**: 消息推送
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4301"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.cloud.deliveryconfig.callback/1.0.0`
+
+**认证方式**: 无认证
 
 **请求参数**（0 个）:
 

@@ -3,16 +3,13 @@ apiName: "youzan.retail.third.coupon.query.info.1.0.0"
 version: "1.0.0"
 appName: "retail-trade-misc"
 apiGroup: "零售门店"
-method: "queryCouponInfo"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3991"
 ---
 
 # youzan.retail.third.coupon.query.info.1.0.0
 
-> **所属分组**: 零售门店  **所属应用**: retail-trade-misc
+> **所属分组**: 零售门店
 
 ---
 
@@ -29,6 +26,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3991"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.retail.third.coupon.query.info/1.0.0`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

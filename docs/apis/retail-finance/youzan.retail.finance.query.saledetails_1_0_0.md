@@ -3,16 +3,13 @@ apiName: "youzan.retail.finance.query.saledetails.1.0.0"
 version: "1.0.0"
 appName: "retail-finance"
 apiGroup: "大客CRM"
-method: "pageQueryGoodsDetails"
-timeout: 6000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3848"
 ---
 
 # youzan.retail.finance.query.saledetails.1.0.0
 
-> **所属分组**: 大客CRM  **所属应用**: retail-finance
+> **所属分组**: 大客CRM
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3848"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.retail.finance.query.saledetails/1.0.0`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

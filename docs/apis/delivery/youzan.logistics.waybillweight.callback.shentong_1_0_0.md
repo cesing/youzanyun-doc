@@ -3,16 +3,13 @@ apiName: "youzan.logistics.waybillweight.callback.shentong.1.0.0"
 version: "1.0.0"
 appName: "delivery"
 apiGroup: "物流配送"
-method: "shentongWeightCallback"
-timeout: 5000
 authType: "无认证"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4231"
 ---
 
 # youzan.logistics.waybillweight.callback.shentong.1.0.0
 
-> **所属分组**: 物流配送  **所属应用**: delivery
+> **所属分组**: 物流配送
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4231"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.logistics.waybillweight.callback.shentong/1.0.0`
+
+**认证方式**: 无认证
 
 **请求参数**（0 个）:
 

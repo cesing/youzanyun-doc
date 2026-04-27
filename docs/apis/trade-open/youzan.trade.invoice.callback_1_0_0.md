@@ -3,16 +3,13 @@ apiName: "youzan.trade.invoice.callback.1.0.0"
 version: "1.0.0"
 appName: "trade-open"
 apiGroup: "trading_setting_advanced"
-method: "invoiceApplyCallback"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4206"
 ---
 
 # youzan.trade.invoice.callback.1.0.0
 
-> **所属分组**: trading_setting_advanced  **所属应用**: trade-open
+> **所属分组**: trading_setting_advanced
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4206"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.trade.invoice.callback/1.0.0`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

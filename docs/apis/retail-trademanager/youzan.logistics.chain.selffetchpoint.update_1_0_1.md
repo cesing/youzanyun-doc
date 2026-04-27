@@ -3,16 +3,13 @@ apiName: "youzan.logistics.chain.selffetchpoint.update.1.0.1"
 version: "1.0.1"
 appName: "retail-trademanager"
 apiGroup: "物流配送"
-method: "updateV2"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4812"
 ---
 
 # youzan.logistics.chain.selffetchpoint.update.1.0.1
 
-> **所属分组**: 物流配送  **所属应用**: retail-trademanager
+> **所属分组**: 物流配送
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4812"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.logistics.chain.selffetchpoint.update/1.0.1`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

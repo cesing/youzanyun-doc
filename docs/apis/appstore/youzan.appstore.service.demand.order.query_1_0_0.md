@@ -3,16 +3,13 @@ apiName: "youzan.appstore.service.demand.order.query.1.0.0"
 version: "1.0.0"
 appName: "appstore"
 apiGroup: "大客CRM"
-method: "getDemandOrderDetail"
-timeout: 5000
 authType: "无认证"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3092"
 ---
 
 # youzan.appstore.service.demand.order.query.1.0.0
 
-> **所属分组**: 大客CRM  **所属应用**: appstore
+> **所属分组**: 大客CRM
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3092"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.appstore.service.demand.order.query/1.0.0`
+
+**认证方式**: 无认证
 
 **请求参数**（3 个）:
 

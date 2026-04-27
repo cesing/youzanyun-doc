@@ -3,16 +3,13 @@ apiName: "youzan.salesman.customer.adjust.3.0.0"
 version: "3.0.0"
 appName: "java-salesman-web"
 apiGroup: "大客CRM"
-method: "adjustRelation"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/325"
 ---
 
 # youzan.salesman.customer.adjust.3.0.0
 
-> **所属分组**: 大客CRM  **所属应用**: java-salesman-web
+> **所属分组**: 大客CRM
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/325"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.salesman.customer.adjust/3.0.0`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

@@ -3,16 +3,13 @@ apiName: "youzan.edu.live.learn.query.page.1.0.1"
 version: "1.0.1"
 appName: "owl-pc"
 apiGroup: "教育"
-method: "findPageUserWatchDetailByCondition"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/2573"
 ---
 
 # youzan.edu.live.learn.query.page.1.0.1
 
-> **所属分组**: 教育  **所属应用**: owl-pc
+> **所属分组**: 教育
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/2573"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.edu.live.learn.query.page/1.0.1`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

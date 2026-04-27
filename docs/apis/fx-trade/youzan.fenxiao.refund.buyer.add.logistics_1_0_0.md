@@ -3,16 +3,13 @@ apiName: "youzan.fenxiao.refund.buyer.add.logistics.1.0.0"
 version: "1.0.0"
 appName: "fx-trade"
 apiGroup: "分销与供货"
-method: "buyerRefundGoodsReturnInfo"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4590"
 ---
 
 # youzan.fenxiao.refund.buyer.add.logistics.1.0.0
 
-> **所属分组**: 分销与供货  **所属应用**: fx-trade
+> **所属分组**: 分销与供货
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4590"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.fenxiao.refund.buyer.add.logistics/1.0.0`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

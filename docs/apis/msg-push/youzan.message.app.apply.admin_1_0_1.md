@@ -3,16 +3,13 @@ apiName: "youzan.message.app.apply.admin.1.0.1"
 version: "1.0.1"
 appName: "msg-push"
 apiGroup: "消息推送"
-method: "pushAppMsgV2"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3658"
 ---
 
 # youzan.message.app.apply.admin.1.0.1
 
-> **所属分组**: 消息推送  **所属应用**: msg-push
+> **所属分组**: 消息推送
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3658"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.message.app.apply.admin/1.0.1`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

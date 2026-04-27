@@ -3,16 +3,13 @@ apiName: "youzan.scrm.wexin.membernumber.update.1.0.0"
 version: "1.0.0"
 appName: "scrm-open-java"
 apiGroup: "会员与客户"
-method: "updateWxMemberNumber"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4492"
 ---
 
 # youzan.scrm.wexin.membernumber.update.1.0.0
 
-> **所属分组**: 会员与客户  **所属应用**: scrm-open-java
+> **所属分组**: 会员与客户
 
 ---
 
@@ -29,6 +26,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4492"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.scrm.wexin.membernumber.update/1.0.0`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

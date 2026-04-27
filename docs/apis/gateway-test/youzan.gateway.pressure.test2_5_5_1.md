@@ -3,16 +3,13 @@ apiName: "youzan.gateway.pressure.test2.5.5.1"
 version: "5.5.1"
 appName: "gateway-test"
 apiGroup: "商品与库存"
-method: "invoke"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/1316"
 ---
 
 # youzan.gateway.pressure.test2.5.5.1
 
-> **所属分组**: 商品与库存  **所属应用**: gateway-test
+> **所属分组**: 商品与库存
 
 ---
 
@@ -27,6 +24,8 @@ x接口测试119966000088887775500zz
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.gateway.pressure.test2/5.5.1`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

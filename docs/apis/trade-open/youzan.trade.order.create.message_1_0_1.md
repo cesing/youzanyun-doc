@@ -3,16 +3,13 @@ apiName: "youzan.trade.order.create.message.1.0.1"
 version: "1.0.1"
 appName: "trade-open"
 apiGroup: "大客CRM"
-method: "sendPostPayMessage"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4767"
 ---
 
 # youzan.trade.order.create.message.1.0.1
 
-> **所属分组**: 大客CRM  **所属应用**: trade-open
+> **所属分组**: 大客CRM
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4767"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.trade.order.create.message/1.0.1`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

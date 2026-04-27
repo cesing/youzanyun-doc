@@ -3,16 +3,13 @@ apiName: "youzan.cardvoucher.datasync.import.cardcreate.1.0.1"
 version: "1.0.1"
 appName: "yz-cardvoucher-biz"
 apiGroup: "储值卡"
-method: "openCard"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3913"
 ---
 
 # youzan.cardvoucher.datasync.import.cardcreate.1.0.1
 
-> **所属分组**: 储值卡  **所属应用**: yz-cardvoucher-biz
+> **所属分组**: 储值卡
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3913"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.cardvoucher.datasync.import.cardcreate/1.0.1`
+
+**认证方式**: 凭证式
 
 **请求参数**（12 个）:
 

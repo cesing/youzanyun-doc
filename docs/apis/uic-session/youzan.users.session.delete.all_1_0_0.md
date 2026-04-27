@@ -3,16 +3,13 @@ apiName: "youzan.users.session.delete.all.1.0.0"
 version: "1.0.0"
 appName: "uic-session"
 apiGroup: "会员与客户"
-method: "delAllForOpen"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4052"
 ---
 
 # youzan.users.session.delete.all.1.0.0
 
-> **所属分组**: 会员与客户  **所属应用**: uic-session
+> **所属分组**: 会员与客户
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4052"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.users.session.delete.all/1.0.0`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

@@ -3,16 +3,13 @@ apiName: "youzan.pay.recharge.page.query.1.0.0"
 version: "1.0.0"
 appName: "pay-gateway"
 apiGroup: "零售门店"
-method: "bifrostInvoke"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3685"
 ---
 
 # youzan.pay.recharge.page.query.1.0.0
 
-> **所属分组**: 零售门店  **所属应用**: pay-gateway
+> **所属分组**: 零售门店
 
 ---
 
@@ -28,6 +25,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3685"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.pay.recharge.page.query/1.0.0`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

@@ -3,16 +3,13 @@ apiName: "youzan.message.qrcode.create.bycloud.1.0.0"
 version: "1.0.0"
 appName: "msg-eventbus"
 apiGroup: "消息推送"
-method: "createByCloud"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/2382"
 ---
 
 # youzan.message.qrcode.create.bycloud.1.0.0
 
-> **所属分组**: 消息推送  **所属应用**: msg-eventbus
+> **所属分组**: 消息推送
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/2382"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.message.qrcode.create.bycloud/1.0.0`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

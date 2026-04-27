@@ -3,16 +3,13 @@ apiName: "youzan.salesman.shoppingguide.query.1.0.0"
 version: "1.0.0"
 appName: "ebiz-salesman"
 apiGroup: "其它"
-method: "getShoppingGuide"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/2892"
 ---
 
 # youzan.salesman.shoppingguide.query.1.0.0
 
-> **所属分组**: 其它  **所属应用**: ebiz-salesman
+> **所属分组**: 其它
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/2892"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.salesman.shoppingguide.query/1.0.0`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

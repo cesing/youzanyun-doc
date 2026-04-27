@@ -3,16 +3,13 @@ apiName: "youzan.showcase.shopnote.create.1.0.0"
 version: "1.0.0"
 appName: "showcase-center"
 apiGroup: "店铺信息"
-method: "createShopNote"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/1939"
 ---
 
 # youzan.showcase.shopnote.create.1.0.0
 
-> **所属分组**: 店铺信息  **所属应用**: showcase-center
+> **所属分组**: 店铺信息
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/1939"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.showcase.shopnote.create/1.0.0`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

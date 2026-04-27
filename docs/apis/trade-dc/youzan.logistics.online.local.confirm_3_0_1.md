@@ -3,16 +3,13 @@ apiName: "youzan.logistics.online.local.confirm.3.0.1"
 version: "3.0.1"
 appName: "trade-dc"
 apiGroup: "交易订单"
-method: "orderLocalSend"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/858"
 ---
 
 # youzan.logistics.online.local.confirm.3.0.1
 
-> **所属分组**: 交易订单  **所属应用**: trade-dc
+> **所属分组**: 交易订单
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/858"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.logistics.online.local.confirm/3.0.1`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

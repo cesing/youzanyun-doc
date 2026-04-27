@@ -3,16 +3,13 @@ apiName: "youzan.logistics.channel.proxy.operate.1.0.0"
 version: "1.0.0"
 appName: "video-channels-trade"
 apiGroup: "物流配送"
-method: "callApi"
-timeout: 10000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4218"
 ---
 
 # youzan.logistics.channel.proxy.operate.1.0.0
 
-> **所属分组**: 物流配送  **所属应用**: video-channels-trade
+> **所属分组**: 物流配送
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4218"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.logistics.channel.proxy.operate/1.0.0`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

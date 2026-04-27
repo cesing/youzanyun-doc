@@ -3,16 +3,13 @@ apiName: "youzan.edu.enroll.query.batch.3.0.0"
 version: "3.0.0"
 appName: "owl-pc"
 apiGroup: "教育"
-method: "batchQuery"
-timeout: 3000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/1956"
 ---
 
 # youzan.edu.enroll.query.batch.3.0.0
 
-> **所属分组**: 教育  **所属应用**: owl-pc
+> **所属分组**: 教育
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/1956"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.edu.enroll.query.batch/3.0.0`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

@@ -3,16 +3,13 @@ apiName: "youzan.click.callback.1.0"
 version: "1.0"
 appName: "ad-dsp"
 apiGroup: "消息推送"
-method: "clickCallback"
-timeout: 5000
 authType: "无认证"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/846"
 ---
 
 # youzan.click.callback.1.0
 
-> **所属分组**: 消息推送  **所属应用**: ad-dsp
+> **所属分组**: 消息推送
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/846"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.click.callback/1.0`
+
+**认证方式**: 无认证
 
 **请求参数**（0 个）:
 

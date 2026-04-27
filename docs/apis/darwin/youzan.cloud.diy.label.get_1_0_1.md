@@ -3,16 +3,13 @@ apiName: "youzan.cloud.diy.label.get.1.0.1"
 version: "1.0.1"
 appName: "darwin"
 apiGroup: "其它"
-method: "queryLabelEntity"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/1309"
 ---
 
 # youzan.cloud.diy.label.get.1.0.1
 
-> **所属分组**: 其它  **所属应用**: darwin
+> **所属分组**: 其它
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/1309"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.cloud.diy.label.get/1.0.1`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

@@ -3,16 +3,13 @@ apiName: "youzan.pay.user.query.IdCertExist.1.0.3"
 version: "1.0.3"
 appName: "pay-gateway"
 apiGroup: "大客CRM"
-method: "bifrostInvoke"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3258"
 ---
 
 # youzan.pay.user.query.IdCertExist.1.0.3
 
-> **所属分组**: 大客CRM  **所属应用**: pay-gateway
+> **所属分组**: 大客CRM
 
 ---
 
@@ -31,6 +28,8 @@ bizSuccess代表业务请求是否成功
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.pay.user.query.IdCertExist/1.0.3`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

@@ -3,16 +3,13 @@ apiName: "youzan.multistore.store.list.1.0.0"
 version: "1.0.0"
 appName: "multistore-center"
 apiGroup: "零售门店"
-method: "listPagedByCondition"
-timeout: 5000
 authType: "无认证"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/599"
 ---
 
 # youzan.multistore.store.list.1.0.0
 
-> **所属分组**: 零售门店  **所属应用**: multistore-center
+> **所属分组**: 零售门店
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/599"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.multistore.store.list/1.0.0`
+
+**认证方式**: 无认证
 
 **请求参数**（0 个）:
 

@@ -3,16 +3,13 @@ apiName: "youzan.bigdata.sku.query.getSkuDataInfo.1.0.2"
 version: "1.0.2"
 appName: "dc-daemon"
 apiGroup: "数据分析"
-method: "getSkuDataInfo"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3200"
 ---
 
 # youzan.bigdata.sku.query.getSkuDataInfo.1.0.2
 
-> **所属分组**: 数据分析  **所属应用**: dc-daemon
+> **所属分组**: 数据分析
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3200"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.bigdata.sku.query.getSkuDataInfo/1.0.2`
+
+**认证方式**: 凭证式
 
 **请求参数**（3 个）:
 

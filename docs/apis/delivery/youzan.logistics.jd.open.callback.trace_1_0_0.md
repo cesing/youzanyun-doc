@@ -3,16 +3,13 @@ apiName: "youzan.logistics.jd.open.callback.trace.1.0.0"
 version: "1.0.0"
 appName: "delivery"
 apiGroup: "其它"
-method: "jdc2bLogisticTraceCallback"
-timeout: 5000
 authType: "无认证"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4006"
 ---
 
 # youzan.logistics.jd.open.callback.trace.1.0.0
 
-> **所属分组**: 其它  **所属应用**: delivery
+> **所属分组**: 其它
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4006"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.logistics.jd.open.callback.trace/1.0.0`
+
+**认证方式**: 无认证
 
 **请求参数**（0 个）:
 

@@ -3,16 +3,13 @@ apiName: "youzan.magneto.bridge.callback.yingmei.taskstatus.1.0.0"
 version: "1.0.0"
 appName: "magneto-bridge"
 apiGroup: "消息推送"
-method: "taskStatus"
-timeout: 5000
 authType: "无认证"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/1041"
 ---
 
 # youzan.magneto.bridge.callback.yingmei.taskstatus.1.0.0
 
-> **所属分组**: 消息推送  **所属应用**: magneto-bridge
+> **所属分组**: 消息推送
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/1041"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.magneto.bridge.callback.yingmei.taskstatus/1.0.0`
+
+**认证方式**: 无认证
 
 **请求参数**（0 个）:
 

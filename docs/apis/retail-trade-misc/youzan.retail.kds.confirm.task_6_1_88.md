@@ -3,16 +3,13 @@ apiName: "youzan.retail.kds.confirm.task.6.1.88"
 version: "6.1.88"
 appName: "retail-trade-misc"
 apiGroup: "交易订单"
-method: "confirmTask"
-timeout: 5000
 authType: "无认证"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4201"
 ---
 
 # youzan.retail.kds.confirm.task.6.1.88
 
-> **所属分组**: 交易订单  **所属应用**: retail-trade-misc
+> **所属分组**: 交易订单
 
 ---
 
@@ -29,6 +26,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4201"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.retail.kds.confirm.task/6.1.88`
+
+**认证方式**: 无认证
 
 **请求参数**（0 个）:
 

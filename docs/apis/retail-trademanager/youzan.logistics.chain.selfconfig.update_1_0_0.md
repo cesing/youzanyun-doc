@@ -3,16 +3,13 @@ apiName: "youzan.logistics.chain.selfconfig.update.1.0.0"
 version: "1.0.0"
 appName: "retail-trademanager"
 apiGroup: "物流配送"
-method: "saveConfig"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3850"
 ---
 
 # youzan.logistics.chain.selfconfig.update.1.0.0
 
-> **所属分组**: 物流配送  **所属应用**: retail-trademanager
+> **所属分组**: 物流配送
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3850"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.logistics.chain.selfconfig.update/1.0.0`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

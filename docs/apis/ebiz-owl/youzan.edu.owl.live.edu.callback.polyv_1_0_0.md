@@ -3,16 +3,13 @@ apiName: "youzan.edu.owl.live.edu.callback.polyv.1.0.0"
 version: "1.0.0"
 appName: "ebiz-owl"
 apiGroup: "教育"
-method: "callbackPolyvLiveViewData"
-timeout: 5000
 authType: "无认证"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3971"
 ---
 
 # youzan.edu.owl.live.edu.callback.polyv.1.0.0
 
-> **所属分组**: 教育  **所属应用**: ebiz-owl
+> **所属分组**: 教育
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3971"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.edu.owl.live.edu.callback.polyv/1.0.0`
+
+**认证方式**: 无认证
 
 **请求参数**（0 个）:
 

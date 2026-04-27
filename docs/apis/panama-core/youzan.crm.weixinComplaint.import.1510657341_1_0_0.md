@@ -3,16 +3,13 @@ apiName: "youzan.crm.weixinComplaint.import.1510657341.1.0.0"
 version: "1.0.0"
 appName: "panama-core"
 apiGroup: "消息推送"
-method: "notify_1510657341"
-timeout: 5000
 authType: "无认证"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/2903"
 ---
 
 # youzan.crm.weixinComplaint.import.1510657341.1.0.0
 
-> **所属分组**: 消息推送  **所属应用**: panama-core
+> **所属分组**: 消息推送
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/2903"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.crm.weixinComplaint.import.1510657341/1.0.0`
+
+**认证方式**: 无认证
 
 **请求参数**（0 个）:
 

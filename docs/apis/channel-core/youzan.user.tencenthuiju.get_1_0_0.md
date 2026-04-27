@@ -3,16 +3,13 @@ apiName: "youzan.user.tencenthuiju.get.1.0.0"
 version: "1.0.0"
 appName: "channel-core"
 apiGroup: "会员与客户"
-method: "get"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3576"
 ---
 
 # youzan.user.tencenthuiju.get.1.0.0
 
-> **所属分组**: 会员与客户  **所属应用**: channel-core
+> **所属分组**: 会员与客户
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3576"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.user.tencenthuiju.get/1.0.0`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

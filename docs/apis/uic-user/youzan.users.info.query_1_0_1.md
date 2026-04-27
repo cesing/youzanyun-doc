@@ -3,16 +3,13 @@ apiName: "youzan.users.info.query.1.0.1"
 version: "1.0.1"
 appName: "uic-user"
 apiGroup: "会员与客户"
-method: "queryUserForOpen"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4451"
 ---
 
 # youzan.users.info.query.1.0.1
 
-> **所属分组**: 会员与客户  **所属应用**: uic-user
+> **所属分组**: 会员与客户
 
 ---
 
@@ -40,6 +37,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4451"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.users.info.query/1.0.1`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

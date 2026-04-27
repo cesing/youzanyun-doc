@@ -3,16 +3,13 @@ apiName: "youzan.cps.order.express.query.1.0.0"
 version: "1.0.0"
 appName: "cps-order"
 apiGroup: "营销优惠"
-method: "getDeliverExpressDetail"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/1500"
 ---
 
 # youzan.cps.order.express.query.1.0.0
 
-> **所属分组**: 营销优惠  **所属应用**: cps-order
+> **所属分组**: 营销优惠
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/1500"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.cps.order.express.query/1.0.0`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

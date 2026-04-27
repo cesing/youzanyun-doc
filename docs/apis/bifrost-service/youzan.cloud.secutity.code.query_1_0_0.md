@@ -3,16 +3,13 @@ apiName: "youzan.cloud.secutity.code.query.1.0.0"
 version: "1.0.0"
 appName: "bifrost-service"
 apiGroup: "大客CRM"
-method: "validateAndGetDomainName"
-timeout: 5000
 authType: "无认证"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/1503"
 ---
 
 # youzan.cloud.secutity.code.query.1.0.0
 
-> **所属分组**: 大客CRM  **所属应用**: bifrost-service
+> **所属分组**: 大客CRM
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/1503"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.cloud.secutity.code.query/1.0.0`
+
+**认证方式**: 无认证
 
 **请求参数**（0 个）:
 

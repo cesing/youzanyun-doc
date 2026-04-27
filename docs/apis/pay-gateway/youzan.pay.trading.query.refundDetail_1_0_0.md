@@ -3,16 +3,13 @@ apiName: "youzan.pay.trading.query.refundDetail.1.0.0"
 version: "1.0.0"
 appName: "pay-gateway"
 apiGroup: "支付与退款"
-method: "queryRefundDetail"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4829"
 ---
 
 # youzan.pay.trading.query.refundDetail.1.0.0
 
-> **所属分组**: 支付与退款  **所属应用**: pay-gateway
+> **所属分组**: 支付与退款
 
 ---
 
@@ -28,6 +25,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4829"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.pay.trading.query.refundDetail/1.0.0`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

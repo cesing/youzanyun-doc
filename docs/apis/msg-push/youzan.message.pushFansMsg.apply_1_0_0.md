@@ -3,16 +3,13 @@ apiName: "youzan.message.pushFansMsg.apply.1.0.0"
 version: "1.0.0"
 appName: "msg-push"
 apiGroup: "消息推送"
-method: "pushFansMsg"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/2946"
 ---
 
 # youzan.message.pushFansMsg.apply.1.0.0
 
-> **所属分组**: 消息推送  **所属应用**: msg-push
+> **所属分组**: 消息推送
 
 ---
 
@@ -29,6 +26,8 @@ https://developers.weixin.qq.com/doc/offiaccount/Message_Management/Service_Cent
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.message.pushFansMsg.apply/1.0.0`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

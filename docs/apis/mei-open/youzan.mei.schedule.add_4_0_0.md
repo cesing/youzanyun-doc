@@ -3,16 +3,13 @@ apiName: "youzan.mei.schedule.add.4.0.0"
 version: "4.0.0"
 appName: "mei-open"
 apiGroup: "美业"
-method: "saveSchedule"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3653"
 ---
 
 # youzan.mei.schedule.add.4.0.0
 
-> **所属分组**: 美业  **所属应用**: mei-open
+> **所属分组**: 美业
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3653"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.mei.schedule.add/4.0.0`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

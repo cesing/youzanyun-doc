@@ -3,16 +3,13 @@ apiName: "youzan.ebiz.trusteeship.account.list.1.0.0"
 version: "1.0.0"
 appName: "video-channels-uc"
 apiGroup: "其它"
-method: "queryAccountListV2"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/5071"
 ---
 
 # youzan.ebiz.trusteeship.account.list.1.0.0
 
-> **所属分组**: 其它  **所属应用**: video-channels-uc
+> **所属分组**: 其它
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/5071"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.ebiz.trusteeship.account.list/1.0.0`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

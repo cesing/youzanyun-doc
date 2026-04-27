@@ -3,16 +3,13 @@ apiName: "youzan.trades.sold.get.4.0.2"
 version: "4.0.2"
 appName: "trade-open"
 apiGroup: "交易订单"
-method: "queryNewTradeList"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/2971"
 ---
 
 # youzan.trades.sold.get.4.0.2
 
-> **所属分组**: 交易订单  **所属应用**: trade-open
+> **所属分组**: 交易订单
 
 ---
 
@@ -34,6 +31,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/2971"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.trades.sold.get/4.0.2`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

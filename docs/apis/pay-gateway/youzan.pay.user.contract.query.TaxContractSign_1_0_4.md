@@ -3,16 +3,13 @@ apiName: "youzan.pay.user.contract.query.TaxContractSign.1.0.4"
 version: "1.0.4"
 appName: "pay-gateway"
 apiGroup: "大客CRM"
-method: "bifrostInvoke"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3260"
 ---
 
 # youzan.pay.user.contract.query.TaxContractSign.1.0.4
 
-> **所属分组**: 大客CRM  **所属应用**: pay-gateway
+> **所属分组**: 大客CRM
 
 ---
 
@@ -31,6 +28,8 @@ bizSuccess代表了业务操作是否成功
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.pay.user.contract.query.TaxContractSign/1.0.4`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

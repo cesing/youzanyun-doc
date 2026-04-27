@@ -3,16 +3,13 @@ apiName: "youzan.item.custom.batch.get.1.0.1"
 version: "1.0.1"
 appName: "ic"
 apiGroup: "商品与库存"
-method: "listByGoodsNOs"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3751"
 ---
 
 # youzan.item.custom.batch.get.1.0.1
 
-> **所属分组**: 商品与库存  **所属应用**: ic
+> **所属分组**: 商品与库存
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3751"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.item.custom.batch.get/1.0.1`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

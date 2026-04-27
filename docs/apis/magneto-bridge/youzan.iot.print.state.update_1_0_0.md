@@ -3,16 +3,13 @@ apiName: "youzan.iot.print.state.update.1.0.0"
 version: "1.0.0"
 appName: "magneto-bridge"
 apiGroup: "其它"
-method: "updatePrintState"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4713"
 ---
 
 # youzan.iot.print.state.update.1.0.0
 
-> **所属分组**: 其它  **所属应用**: magneto-bridge
+> **所属分组**: 其它
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4713"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.iot.print.state.update/1.0.0`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

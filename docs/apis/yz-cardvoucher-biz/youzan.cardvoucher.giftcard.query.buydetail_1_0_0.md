@@ -3,16 +3,13 @@ apiName: "youzan.cardvoucher.giftcard.query.buydetail.1.0.0"
 version: "1.0.0"
 appName: "yz-cardvoucher-biz"
 apiGroup: "储值卡"
-method: "queryBuyDetail"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4065"
 ---
 
 # youzan.cardvoucher.giftcard.query.buydetail.1.0.0
 
-> **所属分组**: 储值卡  **所属应用**: yz-cardvoucher-biz
+> **所属分组**: 储值卡
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4065"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.cardvoucher.giftcard.query.buydetail/1.0.0`
+
+**认证方式**: 凭证式
 
 **请求参数**（1 个）:
 

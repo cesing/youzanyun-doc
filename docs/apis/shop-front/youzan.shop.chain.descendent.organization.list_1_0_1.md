@@ -3,16 +3,13 @@ apiName: "youzan.shop.chain.descendent.organization.list.1.0.1"
 version: "1.0.1"
 appName: "shop-front"
 apiGroup: "店铺信息"
-method: "queryDescendentOrganizations"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3365"
 ---
 
 # youzan.shop.chain.descendent.organization.list.1.0.1
 
-> **所属分组**: 店铺信息  **所属应用**: shop-front
+> **所属分组**: 店铺信息
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3365"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.shop.chain.descendent.organization.list/1.0.1`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

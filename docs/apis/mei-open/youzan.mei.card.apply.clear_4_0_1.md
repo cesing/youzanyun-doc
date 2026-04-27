@@ -3,16 +3,13 @@ apiName: "youzan.mei.card.apply.clear.4.0.1"
 version: "4.0.1"
 appName: "mei-open"
 apiGroup: "美业"
-method: "expendTimeCard"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3835"
 ---
 
 # youzan.mei.card.apply.clear.4.0.1
 
-> **所属分组**: 美业  **所属应用**: mei-open
+> **所属分组**: 美业
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3835"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.mei.card.apply.clear/4.0.1`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

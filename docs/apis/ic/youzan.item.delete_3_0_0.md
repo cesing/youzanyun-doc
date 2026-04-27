@@ -3,16 +3,13 @@ apiName: "youzan.item.delete.3.0.0"
 version: "3.0.0"
 appName: "ic"
 apiGroup: "其它"
-method: "deleteItem"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/53"
 ---
 
 # youzan.item.delete.3.0.0
 
-> **所属分组**: 其它  **所属应用**: ic
+> **所属分组**: 其它
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/53"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.item.delete/3.0.0`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

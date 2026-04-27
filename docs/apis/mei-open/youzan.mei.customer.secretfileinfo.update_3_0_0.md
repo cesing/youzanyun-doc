@@ -3,16 +3,13 @@ apiName: "youzan.mei.customer.secretfileinfo.update.3.0.0"
 version: "3.0.0"
 appName: "mei-open"
 apiGroup: "美业"
-method: "updateCustomerSecretFileInfo"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/555"
 ---
 
 # youzan.mei.customer.secretfileinfo.update.3.0.0
 
-> **所属分组**: 美业  **所属应用**: mei-open
+> **所属分组**: 美业
 
 ---
 
@@ -29,6 +26,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/555"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.mei.customer.secretfileinfo.update/3.0.0`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

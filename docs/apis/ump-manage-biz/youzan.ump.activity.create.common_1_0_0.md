@@ -3,16 +3,13 @@ apiName: "youzan.ump.activity.create.common.1.0.0"
 version: "1.0.0"
 appName: "ump-manage-biz"
 apiGroup: "营销优惠"
-method: "publishActivity"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3763"
 ---
 
 # youzan.ump.activity.create.common.1.0.0
 
-> **所属分组**: 营销优惠  **所属应用**: ump-manage-biz
+> **所属分组**: 营销优惠
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3763"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.ump.activity.create.common/1.0.0`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

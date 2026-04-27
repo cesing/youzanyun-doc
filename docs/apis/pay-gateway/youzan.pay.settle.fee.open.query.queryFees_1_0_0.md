@@ -3,16 +3,13 @@ apiName: "youzan.pay.settle.fee.open.query.queryFees.1.0.0"
 version: "1.0.0"
 appName: "pay-gateway"
 apiGroup: "大客CRM"
-method: "invoke"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4448"
 ---
 
 # youzan.pay.settle.fee.open.query.queryFees.1.0.0
 
-> **所属分组**: 大客CRM  **所属应用**: pay-gateway
+> **所属分组**: 大客CRM
 
 ---
 
@@ -28,6 +25,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4448"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.pay.settle.fee.open.query.queryFees/1.0.0`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

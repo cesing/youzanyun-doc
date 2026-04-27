@@ -3,16 +3,13 @@ apiName: "youzan.guide.performance.config.get.valid.1.0.0"
 version: "1.0.0"
 appName: "guide-pyxis"
 apiGroup: "其它"
-method: "getCommonConfig"
-timeout: 2000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4154"
 ---
 
 # youzan.guide.performance.config.get.valid.1.0.0
 
-> **所属分组**: 其它  **所属应用**: guide-pyxis
+> **所属分组**: 其它
 
 ---
 
@@ -33,6 +30,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4154"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.guide.performance.config.get.valid/1.0.0`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

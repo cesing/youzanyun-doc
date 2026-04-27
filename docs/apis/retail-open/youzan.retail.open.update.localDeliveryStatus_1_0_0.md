@@ -3,16 +3,13 @@ apiName: "youzan.retail.open.update.localDeliveryStatus.1.0.0"
 version: "1.0.0"
 appName: "retail-open"
 apiGroup: "交易订单"
-method: "syncLocalDeliveryStatus"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3390"
 ---
 
 # youzan.retail.open.update.localDeliveryStatus.1.0.0
 
-> **所属分组**: 交易订单  **所属应用**: retail-open
+> **所属分组**: 交易订单
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3390"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.retail.open.update.localDeliveryStatus/1.0.0`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

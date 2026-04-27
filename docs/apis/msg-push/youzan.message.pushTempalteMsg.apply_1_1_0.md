@@ -3,16 +3,13 @@ apiName: "youzan.message.pushTempalteMsg.apply.1.1.0"
 version: "1.1.0"
 appName: "msg-push"
 apiGroup: "消息推送"
-method: "pushTemplateMsg"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3419"
 ---
 
 # youzan.message.pushTempalteMsg.apply.1.1.0
 
-> **所属分组**: 消息推送  **所属应用**: msg-push
+> **所属分组**: 消息推送
 
 ---
 
@@ -28,6 +25,8 @@ https://developers.weixin.qq.com/doc/offiaccount/Message_Management/Template_Mes
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.message.pushTempalteMsg.apply/1.1.0`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

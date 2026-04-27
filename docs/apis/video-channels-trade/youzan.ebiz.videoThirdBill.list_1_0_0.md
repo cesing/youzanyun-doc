@@ -3,16 +3,13 @@ apiName: "youzan.ebiz.videoThirdBill.list.1.0.0"
 version: "1.0.0"
 appName: "video-channels-trade"
 apiGroup: "支付与退款"
-method: "listBillByOrderNo"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3948"
 ---
 
 # youzan.ebiz.videoThirdBill.list.1.0.0
 
-> **所属分组**: 支付与退款  **所属应用**: video-channels-trade
+> **所属分组**: 支付与退款
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3948"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.ebiz.videoThirdBill.list/1.0.0`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

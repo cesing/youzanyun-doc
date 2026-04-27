@@ -3,16 +3,13 @@ apiName: "youzan.dsp.channel.query.queryMpAccountInfoByKdtId.1.0.0"
 version: "1.0.0"
 appName: "channel-core"
 apiGroup: "店铺信息"
-method: "queryMpAccountInfoByKdtId"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3764"
 ---
 
 # youzan.dsp.channel.query.queryMpAccountInfoByKdtId.1.0.0
 
-> **所属分组**: 店铺信息  **所属应用**: channel-core
+> **所属分组**: 店铺信息
 
 ---
 
@@ -29,6 +26,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3764"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.dsp.channel.query.queryMpAccountInfoByKdtId/1.0.0`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

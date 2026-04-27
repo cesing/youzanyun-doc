@@ -3,16 +3,13 @@ apiName: "youzan.ump.meetreduce.create.1.0.1"
 version: "1.0.1"
 appName: "ump-manage-biz"
 apiGroup: "营销优惠"
-method: "createActivity"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/2262"
 ---
 
 # youzan.ump.meetreduce.create.1.0.1
 
-> **所属分组**: 营销优惠  **所属应用**: ump-manage-biz
+> **所属分组**: 营销优惠
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/2262"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.ump.meetreduce.create/1.0.1`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

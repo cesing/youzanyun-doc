@@ -3,16 +3,13 @@ apiName: "youzan.bigdata.useropenbehavior.query.1.0.1"
 version: "1.0.1"
 appName: "seller-datacenter"
 apiGroup: "数据分析"
-method: "scan"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3033"
 ---
 
 # youzan.bigdata.useropenbehavior.query.1.0.1
 
-> **所属分组**: 数据分析  **所属应用**: seller-datacenter
+> **所属分组**: 数据分析
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3033"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.bigdata.useropenbehavior.query/1.0.1`
+
+**认证方式**: 凭证式
 
 **请求参数**（3 个）:
 

@@ -3,16 +3,13 @@ apiName: "youzan.scrm.customer.search.3.1.2"
 version: "3.1.2"
 appName: "scrm-search-core"
 apiGroup: "会员与客户"
-method: "getCustomerList"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/755"
 ---
 
 # youzan.scrm.customer.search.3.1.2
 
-> **所属分组**: 会员与客户  **所属应用**: scrm-search-core
+> **所属分组**: 会员与客户
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/755"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.scrm.customer.search/3.1.2`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

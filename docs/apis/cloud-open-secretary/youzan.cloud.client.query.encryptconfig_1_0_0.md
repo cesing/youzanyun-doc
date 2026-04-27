@@ -3,16 +3,13 @@ apiName: "youzan.cloud.client.query.encryptconfig.1.0.0"
 version: "1.0.0"
 appName: "cloud-open-secretary"
 apiGroup: "大客CRM"
-method: "queryClientEncryptConfig"
-timeout: 30000
 authType: "无认证"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/2670"
 ---
 
 # youzan.cloud.client.query.encryptconfig.1.0.0
 
-> **所属分组**: 大客CRM  **所属应用**: cloud-open-secretary
+> **所属分组**: 大客CRM
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/2670"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.cloud.client.query.encryptconfig/1.0.0`
+
+**认证方式**: 无认证
 
 **请求参数**（0 个）:
 

@@ -3,16 +3,13 @@ apiName: "youzan.scrm.ma.notice.callback.1.0.0"
 version: "1.0.0"
 appName: "scrm-ma-facade"
 apiGroup: "数据分析"
-method: "callback"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4125"
 ---
 
 # youzan.scrm.ma.notice.callback.1.0.0
 
-> **所属分组**: 数据分析  **所属应用**: scrm-ma-facade
+> **所属分组**: 数据分析
 
 ---
 
@@ -30,6 +27,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4125"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.scrm.ma.notice.callback/1.0.0`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

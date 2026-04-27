@@ -3,16 +3,13 @@ apiName: "youzan.guide.relation.invalid.2.0.0"
 version: "2.0.0"
 appName: "guide-pyxis"
 apiGroup: "分销与供货"
-method: "invalidRelation"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3735"
 ---
 
 # youzan.guide.relation.invalid.2.0.0
 
-> **所属分组**: 分销与供货  **所属应用**: guide-pyxis
+> **所属分组**: 分销与供货
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3735"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.guide.relation.invalid/2.0.0`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

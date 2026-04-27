@@ -3,16 +3,13 @@ apiName: "youzan.trade.virtualticket.third.create.3.0.2"
 version: "3.0.2"
 appName: "trade-open"
 apiGroup: "trading_setting_advanced"
-method: "create"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/586"
 ---
 
 # youzan.trade.virtualticket.third.create.3.0.2
 
-> **所属分组**: trading_setting_advanced  **所属应用**: trade-open
+> **所属分组**: trading_setting_advanced
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/586"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.trade.virtualticket.third.create/3.0.2`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

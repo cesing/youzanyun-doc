@@ -3,16 +3,13 @@ apiName: "youzan.pay.customs.declaration.reportpayment.report.1.0.1"
 version: "1.0.1"
 appName: "pay-gateway"
 apiGroup: "跨境报关"
-method: "invoke"
-timeout: 5000
 authType: "凭证式"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/111"
 ---
 
 # youzan.pay.customs.declaration.reportpayment.report.1.0.1
 
-> **所属分组**: 跨境报关  **所属应用**: pay-gateway
+> **所属分组**: 跨境报关
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/111"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.pay.customs.declaration.reportpayment.report/1.0.1`
+
+**认证方式**: 凭证式
 
 **请求参数**（0 个）:
 

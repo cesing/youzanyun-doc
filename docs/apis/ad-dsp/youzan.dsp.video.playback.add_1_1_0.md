@@ -3,16 +3,13 @@ apiName: "youzan.dsp.video.playback.add.1.1.0"
 version: "1.1.0"
 appName: "ad-dsp"
 apiGroup: "营销优惠"
-method: "saveVideoPlaybackClickMsg"
-timeout: 5000
 authType: "无认证"
-type: "Dubbo"
 detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4469"
 ---
 
 # youzan.dsp.video.playback.add.1.1.0
 
-> **所属分组**: 营销优惠  **所属应用**: ad-dsp
+> **所属分组**: 营销优惠
 
 ---
 
@@ -27,6 +24,8 @@ detailUrl: "https://doc.youzanyun.com/detail/content/API/0/4469"
 **请求方法**: `POST`
 
 **请求地址**: `https://open.youzanyun.com/api/youzan.dsp.video.playback.add/1.1.0`
+
+**认证方式**: 无认证
 
 **请求参数**（0 个）:
 
