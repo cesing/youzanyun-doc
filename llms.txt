@@ -1,8 +1,11 @@
 # Youzanyun Open Platform API Index
 
-> 1804 APIs, 17 groups
+> 共 1804 个接口，分为 17 个业务分组 + 消息推送模块
 
-## 其它 (285 APIs)
+
+## 接口分组（按业务域）
+
+### 其它（285 个接口）
 
 - `com.youzan.sogo.token.generate.1.0.0` -- 搜狗输入法回调方法生成token
 - `pay.gateway.1.0.0` -- 支付网关
@@ -337,7 +340,7 @@ Ps. 该接口已废弃，请用youzan.guide.shoppingguide.
 - `youzan.yzk.independent.order.detail.get.1.0.0` -- 获取有赞客订单详情
 - `youzan.yzk.refund.simple.list.1.0.0` -- 根据订单号查维权单号
 
-## 美业 (256 APIs)
+### 美业（256 个接口）
 
 - `youzan.mei.access.get.ticket.4.0.0` -- 美业免登录临时授权码获取接口
 - `youzan.mei.activitys.try.price.list.4.0.0` -- 查询商品体验价优惠信息，适用于C端场景
@@ -664,7 +667,7 @@ Ps. 该接口已废弃，请用youzan.guide.shoppingguide.
 
 
 
-## 营销优惠 (253 APIs)
+### 营销优惠（253 个接口）
 
 - `youzan.ad.order.detail.query.1.0.0` -- 查询分佣订单信息（仅支持合作渠道方使用，开发者及商家请勿调用）
 - `youzan.cps.order.express.query.1.0.0` -- 查询订单发货物流信息（仅支持合作渠道方使用，开发者及商家请勿调用）
@@ -946,7 +949,7 @@ Ps. 该接口已废弃，请用youzan.guide.shoppingguide.
 - `youzan.yzk.shop.promotion.link.query.1.0.0` -- 平台方获取有赞店铺主页推广链接（仅针对自营模式）
 - `youzan.yzk.shop.status.check.1.0.0` -- 接收到店铺状态变更后调用该接口检查店铺当前状态是否和消息通知一致，如果不一致，说明店铺状态已发生变化
 
-## 会员与客户 (182 APIs)
+### 会员与客户（182 个接口）
 
 - `youzan.cloud.security.query.namecode.1.0.0` -- 根据手机号和买家用户id判断是否在有赞用户风控黑名单中，用于判断买家是否是羊毛党等风险用户。
 - `youzan.cloud.security.query.namecode.1.0.1` -- 根据手机号和买家用户id判断是否在有赞用户风控黑名单中，用于判断买家是否是羊毛党等风险用户。
@@ -1153,7 +1156,7 @@ Ps. 该接口已废弃，请用youzan.guide.shoppingguide.
 - `youzan.wecom.staff.get.1.0.0` -- 查询企助员工详情, 包含员工ID、头像等信息
 - `youzan.wecom.staff.search.1.0.0` -- 分页查询企助员工列表，返回员工信息如员工ID，员工头像等
 
-## 大客CRM (150 APIs)
+### 大客CRM（150 个接口）
 
 - `youzan.appstore.service.demand.order.query.1.0.0` -- 服务需求订单查询订单金额（纷享销客，连接器使用）当data返回为空时，代表kdt_id和订单号无对应
 - `youzan.appstore.sevicedemand.query.1.0.0` -- 根据时间获取需求列表(连接器调用)
@@ -1318,7 +1321,7 @@ Ps. 该接口已废弃，请用youzan.guide.shoppingguide.
 - `youzan.users.get.mpaccount.info.1.0.0` -- 获取公众号/小程序的token信息，该接口由于微信的限制目前仅限给自用型有容器应用（大客）使用
 - `youzan.xiaolv.project.list.milestones.1.0.0` -- 根据项目ID获取项目里程碑信息
 
-## 商品与库存 (147 APIs)
+### 商品与库存（147 个接口）
 
 - `youzan.bigdata.consumer.goods.get.1.0.0` -- 基于用户ID获取店铺内个性化推荐商品列表。未登录用户返回综合评分高的商品
 - `youzan.bigdata.data.get.1.0.0` -- 该接口仅支持在快手直播产生的推广数据，查询时间间隔T+1，建议数据在第二天的10：00之后查询前一天
@@ -1634,7 +1637,7 @@ Ps. 该接口已废弃，请用youzan.guide.shoppingguide.
 测试接口
 - `youzan.trade.taxclasscode.search.1.0.0` -- 分页查询含税收分类编码的商品，仅限返回商家在有赞电子发票中配置的税收分类编码
 
-## 分销与供货 (85 APIs)
+### 分销与供货（85 个接口）
 
 - `youzan.ebiz.bill.create.4.0.0` -- 生成分销买家单，并使用店铺余额支付采购单货款。仅限大客定制商家使用。如需使用该接口需要评估是否属于分
 - `youzan.fenxiao.item.detail.get.1.0.0` -- 用于分销商获取分销商品详情，并支持海淘分销商品查询。注意该场景，此时查询商品同时会更新商品：如果供货
@@ -1730,7 +1733,7 @@ Ps. 该接口已废弃，请用youzan.guide.shoppingguide.
 - `youzan.salesman.trades.get.payment.1.0.0` -- 该接口支持查询B端店铺交易查询-分销采购订单-付款信息详情。注意仅支持查询分销采购订单。
 - `youzan.salesman.vcard.poster.get.1.0.0` -- 导购员需要分享自己的名片海报的时候，可以使用这个接口获取导购员名片海报
 
-## 零售门店 (76 APIs)
+### 零售门店（76 个接口）
 
 - `youzan.multistore.goods.sku.update.4.0.0` -- 更新商品sku
 - `youzan.multistore.offline.delete.3.0.0` -- 删除网点
@@ -1821,7 +1824,7 @@ Ps. 该接口已废弃，请用youzan.guide.shoppingguide.
 查询订单
 - `youzan.user.customer.get.offline.1.0.0` -- 斯凯奇定制接口，查询用户是否属于斯凯奇的线下客户。仅供斯凯奇使用
 
-## 交易订单 (68 APIs)
+### 交易订单（68 个接口）
 
 - `youzan.bigdata.team.org.data.list.1.0.0` -- 云上专柜定制交易数据报表
 - `youzan.crm.out.biz.no.query.order.1.0.0` -- 根据外部订单号查询有赞订单号
@@ -1912,7 +1915,7 @@ https://doc.qima-inc.com/pages/viewpage.act
 - `youzan.trades.sold.get.4.0.3` -- 订单搜索接口，升级yz_open_id，该接口目前不支持返回buyer_id。 排序规则基于订单创建
 - `youzan.trades.sold.get.4.0.4` -- 订单搜索接口，升级yz_open_id，该接口目前不支持返回buyer_id。 排序规则基于订单创建
 
-## 物流配送 (65 APIs)
+### 物流配送（65 个接口）
 
 - `youzan.logistics.cainiao.callback.customsClearance.1.0.0` -- 菜鸟link平台专用
 - `youzan.logistics.chain.selfconfig.update.1.0.0` -- 更新自提点详细配置信息
@@ -1982,7 +1985,7 @@ https://doc.qima-inc.com/pages/viewpage.act
 - `youzan.trade.selffetchcode.get.4.0.0` -- 通过自提码查询详情
 - `youzan.user.contact.get.1.0.0` -- 查询自提人列表接口
 
-## 教育 (53 APIs)
+### 教育（53 个接口）
 
 - `youzan.aiguang.live.search.1.0.0` -- 查询有赞店铺直播列表数据
 - `youzan.edu.accountChange.operate.1.0.0` -- 校管家调用积分同步接口
@@ -2041,7 +2044,7 @@ https://doc.qima-inc.com/pages/viewpage.act
 - `youzan.edu.studentorder.add.1.0.0` -- 主要用于学员订单的同步
 - `youzan.edu.subscription.query.page.1.0` -- 分页查询知识付费订阅记录
 
-## 店铺信息 (53 APIs)
+### 店铺信息（53 个接口）
 
 - `youzan.bigdata.realtime.query.1.0.0` -- 实时分析的实时概况数据，主要包括浏览访问、成交转化、客户会员
 - `youzan.crm.subshop.search.groupid.1.0.0` -- 分页查询店铺组下的分店
@@ -2101,7 +2104,7 @@ https://doc.qima-inc.com/pages/viewpage.act
 - `youzan.showcase.shopnote.update.1.0.0` -- 店铺笔记种草清单模版更新开放接口
 - `youzan.showcase.userthumbs.query.shopnote.1.0.0` -- 查询用户点赞的店铺笔记
 
-## 消息推送 (45 APIs)
+### 消息推送（45 个接口）
 
 - `youzan.click.callback.1.0` -- 提供给头条的回调接口
 - `youzan.click.mpCallback.1.0` -- 提供给微信的回调接口
@@ -2157,7 +2160,7 @@ https://developers.weixin.q
 - `youzan.pay.settle.yzh.callback.taxYzhSettleNotifyCallBack.1.0.0` -- 云账户自主结算订单状态回调通知
 - `youzan.pay.workorder.operate.flow.1.0.0` -- 订单贷人审工单回调接口
 
-## 储值卡 (35 APIs)
+### 储值卡（35 个接口）
 
 - `youzan.cardvoucher.card.create.init.1.0.0` -- 储值礼品卡制卡接口，会创建未激活的礼品卡且没有归属人，该礼品卡可以在商家后台 储值查询-卡查询中根据
 - `youzan.cardvoucher.card.create.template.1.0.0` -- 地址：商家后台-会员-储值规则，创建余额模板或储值卡模板
@@ -2204,7 +2207,7 @@ https://developers.weixin.q
 - `youzan.cardvoucher.valuecard.rechg.rcd.bypub.search.3.0.2` -- 该接口用于具备发卡能力的总店或合伙人店铺查询其发行的储值卡所产生的全部充值记录
 版本新增：yz_op
 
-## 数据分析 (26 APIs)
+### 数据分析（26 个接口）
 
 - `youzan.bigdata.consumer.text.get.descriptiontext.1.0.0` -- 商品文本类接口。输入一个带产品词的query或商品标题，返回一段如诗般优雅的商品描述文案。文案可以用
 - `youzan.bigdata.heatmap.list.pages.1.0.0` -- 获取热力图页面列表,分页方式获取页面列表。支持页面模糊搜索和页面类型的筛选。返回的id为热力图id，
@@ -2237,7 +2240,7 @@ https://developers.weixin.q
 根据回调的消息触达结果，更新对应的触达记录。
 需配合消息推送API：”营销
 
-## 支付与退款 (21 APIs)
+### 支付与退款（21 个接口）
 
 - `youzan.ebiz.videoThirdBill.list.1.0.0` -- 视频号订单通过有赞侧订单查询微信侧资金入账时间
 - `youzan.mei.cross.bill.config.get.4.0.0` -- 查询跨店结算配置
@@ -2263,9 +2266,20 @@ https://developers.weixin.q
 - `youzan.trade.refund.seller.active.3.0.0` -- 商家主动退款
 - `youzan.trade.refund.seller.active.3.0.1` -- 商家主动退款
 
-## 跨境报关 (4 APIs)
+### 跨境报关（4 个接口）
 
 - `youzan.cloud.haitao.verify.buyerId.1.0.0` -- 根据用户id判断海淘额度是否限额
 - `youzan.pay.customs.declaration.reportpayment.report.1.0.1` -- 支付跨境报关接口
 - `youzan.pay.customs.declaration.reportpayment.report.1.0.2` -- 支付跨境报关接口
 - `youzan.trade.cross.amount.query.1.0.0` -- 查询海关个人年度跨境额度
+
+## 消息推送模块（docs/push/）
+
+- **交易支付回调**（docs/push/交易支付回调/）
+- **消息推送**（docs/push/客服回调/）
+- **微信客服投诉**（docs/push/微信客服投诉/）
+- **教育回调**（docs/push/教育回调/）
+- **消息推送**（docs/push/消息推送/）
+- **点击推送**（docs/push/点击推送/）
+- **物流回调**（docs/push/物流回调/）
+- **短信回调**（docs/push/短信回调/）
