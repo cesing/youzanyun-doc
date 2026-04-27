@@ -1,22 +1,18 @@
 ---
 apiName: "youzan.bigdata.psmanage.get.orderpsinfo.1.0.0"
 version: "1.0.0"
-status: "已上线/变更中"
 appName: "seller-datacenter"
 apiGroup: "data_center"
-serviceName: "com.youzan.bigdata.datacenter.base.api.service.psmanage.chain.ManagePsOder2PsCodeService"
 method: "getPsInfoByOrderNo"
 timeout: "5000"
-protocol: "dubbo"
-authType: "需要Token"
-type: "查询/写入"
-kdtTypes: [1, wsc, wsc_head, wsc_online, retail, retail_d_partner, retail_head_high, retail_head, retail_online, retail_offline, retail_partner, 1]
+authType: "凭证式"
+type: "HTTP"
 deprecated: false
 since: "2023-02-19"
-detailUrl: "https://gateway.qima-inc.com/api-manager/detail?id=3998"
+detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3998"
 ---
 # youzan.bigdata.psmanage.get.orderpsinfo.1.0.0
-> **所属分组**: data_center　**所属应用**: seller-datacenter　**状态**: 已上线/变更中
+> **所属分组**: data_center　**所属应用**: seller-datacenter
 ---
 ## 1. 场景说明
 通过订单号查询订单所属推广分析信息
@@ -24,8 +20,6 @@ detailUrl: "https://gateway.qima-inc.com/api-manager/detail?id=3998"
 ## 2. 请求
 **请求方法**: `POST`
 **请求地址**: `https://open.youzanyun.com/api/youzan.bigdata.psmanage.get.orderpsinfo/1.0.0`
-**超时时间**: `5000ms`
-**鉴权方式**: `需要Token`
 **请求参数 Schema**（1 个参数）:
 ```json
 {
@@ -42,11 +36,11 @@ detailUrl: "https://gateway.qima-inc.com/api-manager/detail?id=3998"
   ]
 }
 ```
-**请求参数明细**
+**请求参数明细**（1 个字段）：
 
 | 参数名 | 类型 | 必填 | 示例 | 说明 |
-|---|---|---|---|---|
-| `tid` | `string` | ✅ 是 | `E20190312105415047400001` | 有赞订单号，E开头+年月日时分秒+随机数，长度24位字母和数字组合 |
+|--------|------|------|------|------|
+| `tid` | `string` | ✅ | `E20190312105415047400001` | 有赞订单号，E开头+年月日时分秒+随机数，长度24位字母和数字组合 |
 ---
 ## 3. 响应
 **响应参数 Schema**（7 个字段）:
@@ -55,7 +49,7 @@ detailUrl: "https://gateway.qima-inc.com/api-manager/detail?id=3998"
   "type": "object",
   "properties": {
     "data": {
-      "type": "object",
+      "type": "string",
       "description": "业务数据"
     },
     "tid": {
@@ -74,12 +68,12 @@ detailUrl: "https://gateway.qima-inc.com/api-manager/detail?id=3998"
       "example": "推广分析01"
     },
     "success": {
-      "type": "string",
+      "type": "boolean",
       "description": "表示本次请求是否成功。 true:成功 false：失败",
       "example": "true"
     },
     "code": {
-      "type": "string",
+      "type": "integer",
       "description": "网关返回码，表示本次请求是否成功。200 :成功。",
       "example": "200"
     },
@@ -103,30 +97,24 @@ detailUrl: "https://gateway.qima-inc.com/api-manager/detail?id=3998"
   "message": "successful"
 }
 ```
-**响应参数明细**
+**响应参数明细**（7 个字段）：
 
 | 参数名 | 类型 | 必填 | 示例 | 说明 |
-|---|---|---|---|---|
-| `data` | `object` | ❌ 否 | `` | 业务数据 |
-| `tid` | `string` | ❌ 否 | `E20190312105415047400001` | 有赞订单号，E开头+年月日时分秒+随机数，长度24位字母和数字组合 |
-| `dcps` | `string` | ❌ 否 | `213125605561431230.20001` | 推广分析唯一标识符 |
-| `ps_name` | `string` | ❌ 否 | `推广分析01` | 推广分析名称 |
-| `success` | `string` | ❌ 否 | `true` | 表示本次请求是否成功。 true:成功 false：失败 |
-| `code` | `string` | ❌ 否 | `200` | 网关返回码，表示本次请求是否成功。200 :成功。 |
-| `message` | `string` | ❌ 否 | `successful` | 网关返回码描述 |
+|--------|------|------|------|------|
+| `data` | `string` | ❌ | `` | 业务数据 |
+| `tid` | `string` | ❌ | `E20190312105415047400001` | 有赞订单号，E开头+年月日时分秒+随机数，长度24位字母和数字组合 |
+| `dcps` | `string` | ❌ | `213125605561431230.20001` | 推广分析唯一标识符 |
+| `ps_name` | `string` | ❌ | `推广分析01` | 推广分析名称 |
+| `success` | `boolean` | ❌ | `true` | 表示本次请求是否成功。 true:成功 false：失败 |
+| `code` | `integer` | ❌ | `200` | 网关返回码，表示本次请求是否成功。200 :成功。 |
+| `message` | `string` | ❌ | `successful` | 网关返回码描述 |
 ---
 ## 4. cURL / Python 调用示例
 ```bash
-# 有赞云 API 调用示例
-# 有赞云地址: https://open.youzanyun.com
-# 文档地址: https://gateway.qima-inc.com/api-manager/detail?id=3998
-
-curl -X POST 'https://open.youzanyun.com/api/youzan.skinfo/1.0.0' \
-  -H 'Authorization: Bearer <YOUR_ACCESS_TOKEN>' \
+curl -X POST 'https://open.youzanyun.com/api/youzan.bigdata.psmanage.get.orderpsinfo/1.0.0' \
+  -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
   -H 'Content-Type: application/json' \
-  -d '{
-  "tid": "E20190312105415047400001"
-}'
+  -d '{\n  "tid": "E20190312105415047400001"\n}'
 ```
 
 ```python
@@ -134,47 +122,43 @@ import requests
 
 url = "https://open.youzanyun.com/api/youzan.bigdata.psmanage.get.orderpsinfo/1.0.0"
 headers = {
-    "Authorization": "Bearer <YOUR_ACCESS_TOKEN>",
-    "Content-Type": "application/json"
+    "Authorization": "Bearer YOUR_ACCESS_TOKEN",
+    "Content-Type": "application/json",
 }
 payload = {
-  "tid": "E20190312105415047400001"
+    "tid": "E20190312105415047400001"
 }
 
-response = requests.post(url, json=payload, headers=headers)
-print(response.json())
+resp = requests.post(url, json=payload, headers=headers)
+print(resp.json())
 ```
-
-> ⚠️ **注意**：以上为示例代码，`access_token` 需要通过 OAuth2.0 流程获取。
-> 真实调用地址和参数请以管理后台详情页为准。
-
 ---
 ## 5. 错误码
-## 错误码
+| 错误码 | 类型 | 说明 |
+|--------|------|------|
+| 10001 | `SYSTEM_ERROR` | 系统内部错误 |
+| 10002 | `INVALID_PARAMETER` | 参数错误 |
+| 10003 | `UNAUTHORIZED` | 未授权或授权已过期 |
+| 10004 | `PERMISSION_DENIED` | 无权限调用此接口 |
+| 10005 | `RESOURCE_NOT_FOUND` | 请求的资源不存在 |
+| 20001 | `RATE_LIMIT_EXCEEDED` | 调用频率超限 |
+| 20002 | `QUOTA_EXCEEDED` | 接口配额已用完 |
+---
+## 6. 权限与计费
 
-| 错误码 | 说明 | 处理建议 |
-|--------|------|----------|
-| 1000 | 系统内部错误 | 稍后重试或联系技术支持 |
-| 1001 | 鉴权失败 | 检查 access_token 是否有效 |
-| 1002 | 参数校验失败 | 检查必填参数是否完整 |
-| 1003 | 权限不足 | 确认应用已开通对应接口权限 |
-| 1004 | 频率超限 | 降低请求频率或申请更高配额 |
-| 1005 | 资源不存在 | 检查请求的业务 ID 是否正确 |
-| 1006 | 请求超时 | 增加超时时间或稍后重试 |
-| 1007 | 账户欠费 | 完成账户充值后重试 |
+**接口计费状态：未知（请以官网实际披露为准）。**
 
-> 更多错误码请参考：[有赞云错误码文档](https://doc.youzanyun.com) |
+**拥有此API的能力包：** 暂无数据（请以官网实际披露为准）。
 
 ---
-## 6. 内部服务信息
-| 字段 | 值 |
-|------|---|
-| 协议类型 | dubbo |
-| 服务名称 | `com.youzan.bigdata.datacenter.base.api.service.psmanage.chain.ManagePsOder2PsCodeService` |
-| 方法名称 | `getPsInfoByOrderNo` |
-| 超时时间 | 5000ms |
----
-## 8. 关联接口
-*（暂无关联数据，文档完善后将补充相关接口）*
----
-_本文档由 AI 自动生成，源数据来自 [有赞云开放平台详情页](https://gateway.qima-inc.com/api-manager/detail?id=3998)_
+## 7. 权限说明
+
+**应用类目 → 权限类型：**
+
+| 应用类目 | 权限类型 |
+|----------|----------|
+| 有赞微商城、有赞零售、有赞教育、有赞美业 | 普通自研商家（基础权益） |
+| 大客户定制接口、美业大客户定制、零售大客户定制、收款二维码-大客专用 | 大客定制接口（需购买大客套餐） |
+| 客户关系CRM、门店POS | iPaaS 套餐权益（需购买 iPaaS 套餐） |
+
+> 权限数据来源：[有赞云能力包说明](https://doc.youzanyun.com/detail/content/API/0/120)

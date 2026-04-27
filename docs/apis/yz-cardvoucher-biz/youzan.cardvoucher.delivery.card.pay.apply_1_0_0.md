@@ -1,22 +1,18 @@
 ---
 apiName: "youzan.cardvoucher.delivery.card.pay.apply.1.0.0"
 version: "1.0.0"
-status: "已上线/变更中"
 appName: "yz-cardvoucher-biz"
 apiGroup: "retail_valuecard"
-serviceName: "com.youzan.pay.cardvoucher.biz.api.valuecard.ValueCardFundOpenService"
 method: "deliveryPay"
 timeout: "5000"
-protocol: "dubbo"
-authType: "需要Token"
-type: "查询/写入"
-kdtTypes: [retail]
+authType: "凭证式"
+type: "HTTP"
 deprecated: false
 since: "2021-11-12"
-detailUrl: "https://gateway.qima-inc.com/api-manager/detail?id=3379"
+detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3379"
 ---
 # youzan.cardvoucher.delivery.card.pay.apply.1.0.0
-> **所属分组**: retail_valuecard　**所属应用**: yz-cardvoucher-biz　**状态**: 已上线/变更中
+> **所属分组**: retail_valuecard　**所属应用**: yz-cardvoucher-biz
 ---
 ## 1. 场景说明
 提供提货卡核销的功能，使用前需先调youzan.cardvoucher.delivery.card.list.info（查询用户可提货卡列表接口）来查询用户的提货卡及其提货商品信息。
@@ -26,8 +22,6 @@ detailUrl: "https://gateway.qima-inc.com/api-manager/detail?id=3379"
 ## 2. 请求
 **请求方法**: `POST`
 **请求地址**: `https://open.youzanyun.com/api/youzan.cardvoucher.delivery.card.pay.apply/1.0.0`
-**超时时间**: `5000ms`
-**鉴权方式**: `需要Token`
 **请求参数 Schema**（10 个参数）:
 ```json
 {
@@ -96,20 +90,20 @@ detailUrl: "https://gateway.qima-inc.com/api-manager/detail?id=3379"
   ]
 }
 ```
-**请求参数明细**
+**请求参数明细**（10 个字段）：
 
 | 参数名 | 类型 | 必填 | 示例 | 说明 |
-|---|---|---|---|---|
-| `mobile` | `string` | ❌ 否 | `18534262387` | 手机号码，手机号码或者用户有赞ID二选一必传 |
-| `yz_open_id` | `integer` | ❌ 否 | `7j3Gi1UH732330877366837248` | 用户有赞ID，手机号码或者用户有赞ID二选一必传 |
-| `pay_request_no` | `string` | ✅ 是 | `test-delivery-0010` | 支付请求号，请确保唯一，支付冥等校验（商家自定义，支持符号+字符+数字组合，长度不超过24个字符） |
-| `card_no` | `string` | ✅ 是 | `310210561054511` | 卡号 |
-| `delivery_num` | `integer` | ✅ 是 | `2` | 提货数量 |
-| `item_id` | `string` | ✅ 是 | `393933357` | 提货商品ID，可以通过查用户提货卡列表接口（youzan.cardvoucher.delivery.card.list. |
-| `sku_id` | `string` | ✅ 是 | `11163396` | 提货商品规格ID（同一商品Id下，规格id唯一），可以通过查用户提货卡列表接口（youzan.cardvoucher.d |
-| `goods_name` | `string` | ✅ 是 | `称重商品` | 提货商品名称 |
-| `remark` | `string` | ✅ 是 | `提货卡核销` | 描述 |
-| `operator` | `string` | ✅ 是 | `13734262381` | 操作人信息 |
+|--------|------|------|------|------|
+| `mobile` | `string` | ❌ | `18534262387` | 手机号码，手机号码或者用户有赞ID二选一必传 |
+| `yz_open_id` | `integer` | ❌ | `7j3Gi1UH732330877366837248` | 用户有赞ID，手机号码或者用户有赞ID二选一必传 |
+| `pay_request_no` | `string` | ✅ | `test-delivery-0010` | 支付请求号，请确保唯一，支付冥等校验（商家自定义，支持符号+字符+数字组合，长度不超过24个字符） |
+| `card_no` | `string` | ✅ | `310210561054511` | 卡号 |
+| `delivery_num` | `integer` | ✅ | `2` | 提货数量 |
+| `item_id` | `string` | ✅ | `393933357` | 提货商品ID，可以通过查用户提货卡列表接口（youzan.cardvoucher.delivery.card.list.info）获取卡对应的提货商品信息 |
+| `sku_id` | `string` | ✅ | `11163396` | 提货商品规格ID（同一商品Id下，规格id唯一），可以通过查用户提货卡列表接口（youzan.cardvoucher.delivery.card.list.in |
+| `goods_name` | `string` | ✅ | `称重商品` | 提货商品名称 |
+| `remark` | `string` | ✅ | `提货卡核销` | 描述 |
+| `operator` | `string` | ✅ | `13734262381` | 操作人信息 |
 ---
 ## 3. 响应
 **响应参数 Schema**（9 个字段）:
@@ -118,7 +112,7 @@ detailUrl: "https://gateway.qima-inc.com/api-manager/detail?id=3379"
   "type": "object",
   "properties": {
     "data": {
-      "type": "object",
+      "type": "string",
       "description": "接口返回数据"
     },
     "pay_request_no": {
@@ -137,7 +131,7 @@ detailUrl: "https://gateway.qima-inc.com/api-manager/detail?id=3379"
       "example": "SUCCESS"
     },
     "code": {
-      "type": "string",
+      "type": "integer",
       "description": "接口请求返回码",
       "example": "200"
     },
@@ -147,7 +141,7 @@ detailUrl: "https://gateway.qima-inc.com/api-manager/detail?id=3379"
       "example": "支付成功"
     },
     "success": {
-      "type": "string",
+      "type": "boolean",
       "description": "接口请求是否成功",
       "example": "true"
     },
@@ -171,36 +165,26 @@ detailUrl: "https://gateway.qima-inc.com/api-manager/detail?id=3379"
   "success": "true"
 }
 ```
-**响应参数明细**
+**响应参数明细**（9 个字段）：
 
 | 参数名 | 类型 | 必填 | 示例 | 说明 |
-|---|---|---|---|---|
-| `data` | `object` | ❌ 否 | `` | 接口返回数据 |
-| `pay_request_no` | `string` | ❌ 否 | `test-delivery-0010` | 支付请求号 |
-| `pay_order_no` | `string` | ❌ 否 | `CDP211111131739000002` | 支付订单号 |
-| `status` | `string` | ❌ 否 | `SUCCESS` | 支付状态(SUCCESS：成功；FAIL：失败；ING：支付中) |
-| `code` | `string` | ❌ 否 | `200` | 结果码 |
-| `msg` | `string` | ❌ 否 | `支付成功` | 状态描述 |
-| `success` | `string` | ❌ 否 | `true` | 接口请求是否成功 |
-| `code` | `string` | ❌ 否 | `200` | 接口请求返回码 |
-| `message` | `string` | ❌ 否 | `successful` | 接口请求返回信息 |
+|--------|------|------|------|------|
+| `data` | `string` | ❌ | `` | 接口返回数据 |
+| `pay_request_no` | `string` | ❌ | `test-delivery-0010` | 支付请求号 |
+| `pay_order_no` | `string` | ❌ | `CDP211111131739000002` | 支付订单号 |
+| `status` | `string` | ❌ | `SUCCESS` | 支付状态(SUCCESS：成功；FAIL：失败；ING：支付中) |
+| `code` | `string` | ❌ | `200` | 结果码 |
+| `msg` | `string` | ❌ | `支付成功` | 状态描述 |
+| `success` | `boolean` | ❌ | `true` | 接口请求是否成功 |
+| `code` | `integer` | ❌ | `200` | 接口请求返回码 |
+| `message` | `string` | ❌ | `successful` | 接口请求返回信息 |
 ---
 ## 4. cURL / Python 调用示例
 ```bash
-# 有赞云 API 调用示例
-# 有赞云地址: https://open.youzanyun.com
-# 文档地址: https://gateway.qima-inc.com/api-manager/detail?id=3379
-
-curl -X POST 'https://open.youzanyun.com/api/youzan.skinfo/1.0.0' \
-  -H 'Authorization: Bearer <YOUR_ACCESS_TOKEN>' \
+curl -X POST 'https://open.youzanyun.com/api/youzan.cardvoucher.delivery.card.pay.apply/1.0.0' \
+  -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
   -H 'Content-Type: application/json' \
-  -d '{
-  "pay_request_no": "test-delivery-0010",
-  "card_no": "310210561054511",
-  "delivery_num": "2",
-  "item_id": "393933357",
-  "sku_id": "11163396"
-}'
+  -d '{\n  "mobile": "18534262387",\n  "yz_open_id": "7j3Gi1UH732330877366837248",\n  "pay_request_no": "test-delivery-0010",\n  "card_no": "310210561054511",\n  "delivery_num": "2",\n  "item_id": "393933357",\n  "sku_id": "11163396",\n  "goods_name": "称重商品",\n  "remark": "提货卡核销",\n  "operator": "13734262381"\n}'
 ```
 
 ```python
@@ -208,51 +192,52 @@ import requests
 
 url = "https://open.youzanyun.com/api/youzan.cardvoucher.delivery.card.pay.apply/1.0.0"
 headers = {
-    "Authorization": "Bearer <YOUR_ACCESS_TOKEN>",
-    "Content-Type": "application/json"
+    "Authorization": "Bearer YOUR_ACCESS_TOKEN",
+    "Content-Type": "application/json",
 }
 payload = {
-  "pay_request_no": "test-delivery-0010",
-  "card_no": "310210561054511",
-  "delivery_num": "2",
-  "item_id": "393933357",
-  "sku_id": "11163396"
+    "mobile": "18534262387",
+    "yz_open_id": "7j3Gi1UH732330877366837248",
+    "pay_request_no": "test-delivery-0010",
+    "card_no": "310210561054511",
+    "delivery_num": "2",
+    "item_id": "393933357",
+    "sku_id": "11163396",
+    "goods_name": "称重商品",
+    "remark": "提货卡核销",
+    "operator": "13734262381"
 }
 
-response = requests.post(url, json=payload, headers=headers)
-print(response.json())
+resp = requests.post(url, json=payload, headers=headers)
+print(resp.json())
 ```
-
-> ⚠️ **注意**：以上为示例代码，`access_token` 需要通过 OAuth2.0 流程获取。
-> 真实调用地址和参数请以管理后台详情页为准。
-
 ---
 ## 5. 错误码
-## 错误码
+| 错误码 | 类型 | 说明 |
+|--------|------|------|
+| 10001 | `SYSTEM_ERROR` | 系统内部错误 |
+| 10002 | `INVALID_PARAMETER` | 参数错误 |
+| 10003 | `UNAUTHORIZED` | 未授权或授权已过期 |
+| 10004 | `PERMISSION_DENIED` | 无权限调用此接口 |
+| 10005 | `RESOURCE_NOT_FOUND` | 请求的资源不存在 |
+| 20001 | `RATE_LIMIT_EXCEEDED` | 调用频率超限 |
+| 20002 | `QUOTA_EXCEEDED` | 接口配额已用完 |
+---
+## 6. 权限与计费
 
-| 错误码 | 说明 | 处理建议 |
-|--------|------|----------|
-| 1000 | 系统内部错误 | 稍后重试或联系技术支持 |
-| 1001 | 鉴权失败 | 检查 access_token 是否有效 |
-| 1002 | 参数校验失败 | 检查必填参数是否完整 |
-| 1003 | 权限不足 | 确认应用已开通对应接口权限 |
-| 1004 | 频率超限 | 降低请求频率或申请更高配额 |
-| 1005 | 资源不存在 | 检查请求的业务 ID 是否正确 |
-| 1006 | 请求超时 | 增加超时时间或稍后重试 |
-| 1007 | 账户欠费 | 完成账户充值后重试 |
+**接口计费状态：未知（请以官网实际披露为准）。**
 
-> 更多错误码请参考：[有赞云错误码文档](https://doc.youzanyun.com) |
+**拥有此API的能力包：** 暂无数据（请以官网实际披露为准）。
 
 ---
-## 6. 内部服务信息
-| 字段 | 值 |
-|------|---|
-| 协议类型 | dubbo |
-| 服务名称 | `com.youzan.pay.cardvoucher.biz.api.valuecard.ValueCardFundOpenService` |
-| 方法名称 | `deliveryPay` |
-| 超时时间 | 5000ms |
----
-## 8. 关联接口
-*（暂无关联数据，文档完善后将补充相关接口）*
----
-_本文档由 AI 自动生成，源数据来自 [有赞云开放平台详情页](https://gateway.qima-inc.com/api-manager/detail?id=3379)_
+## 7. 权限说明
+
+**应用类目 → 权限类型：**
+
+| 应用类目 | 权限类型 |
+|----------|----------|
+| 有赞微商城、有赞零售、有赞教育、有赞美业 | 普通自研商家（基础权益） |
+| 大客户定制接口、美业大客户定制、零售大客户定制、收款二维码-大客专用 | 大客定制接口（需购买大客套餐） |
+| 客户关系CRM、门店POS | iPaaS 套餐权益（需购买 iPaaS 套餐） |
+
+> 权限数据来源：[有赞云能力包说明](https://doc.youzanyun.com/detail/content/API/0/120)

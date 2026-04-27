@@ -1,22 +1,18 @@
 ---
 apiName: "youzan.aiguang.live.search.1.0.0"
 version: "1.0.0"
-status: "已上线/变更中"
 appName: "guang-live"
 apiGroup: "open_education_broadcast"
-serviceName: "com.guang.live.api.service.LiveStreamingSearchService"
 method: "searchForYouzanShop"
 timeout: "5000"
-protocol: "dubbo"
-authType: "需要Token"
-type: "查询/写入"
-kdtTypes: [wsc, retail, wsc_head, wsc_online, retail_d_partner, retail_front_warehouse, retail_head, retail_head_high, retail_online, retail_online_lite, retail_offlineretail_partner, retail_supplier, retail_single_warehouse, beauty, edu, edu_headedu_branch, hotel]
+authType: "凭证式"
+type: "HTTP"
 deprecated: false
 since: "2021-12-14"
-detailUrl: "https://gateway.qima-inc.com/api-manager/detail?id=3477"
+detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3477"
 ---
 # youzan.aiguang.live.search.1.0.0
-> **所属分组**: open_education_broadcast　**所属应用**: guang-live　**状态**: 已上线/变更中
+> **所属分组**: open_education_broadcast　**所属应用**: guang-live
 ---
 ## 1. 场景说明
 查询有赞店铺直播列表数据
@@ -24,8 +20,6 @@ detailUrl: "https://gateway.qima-inc.com/api-manager/detail?id=3477"
 ## 2. 请求
 **请求方法**: `POST`
 **请求地址**: `https://open.youzanyun.com/api/youzan.aiguang.live.search/1.0.0`
-**超时时间**: `5000ms`
-**鉴权方式**: `需要Token`
 **请求参数 Schema**（6 个参数）:
 ```json
 {
@@ -72,16 +66,16 @@ detailUrl: "https://gateway.qima-inc.com/api-manager/detail?id=3477"
   ]
 }
 ```
-**请求参数明细**
+**请求参数明细**（6 个字段）：
 
 | 参数名 | 类型 | 必填 | 示例 | 说明 |
-|---|---|---|---|---|
-| `page_no` | `integer` | ✅ 是 | `1` | 分页参数 |
-| `page_size` | `integer` | ✅ 是 | `10` | 分页参数（最小1， 最大暂未限制，无默认值） |
-| `state_list` | `integer` | ✅ 是 | `[10, 15]` | 直播状态；10：预告；15：直播中；45：结束(也就是回放) |
-| `is_replay_search` | `boolean` | ✅ 是 | `true` | 是否回放搜索，是的话stateList参数将失效 |
-| `sequence_field` | `string` | ✅ 是 | `started_at` | 目前仅支持started_at字段 |
-| `sequence_type` | `string` | ✅ 是 | `desc` | 排序类型：desc（默认降序），asc（升序） |
+|--------|------|------|------|------|
+| `page_no` | `integer` | ✅ | `1` | 分页参数 |
+| `page_size` | `integer` | ✅ | `10` | 分页参数（最小1， 最大暂未限制，无默认值） |
+| `state_list` | `integer` | ✅ | `[10, 15]` | 直播状态；10：预告；15：直播中；45：结束(也就是回放) |
+| `is_replay_search` | `boolean` | ✅ | `true` | 是否回放搜索，是的话stateList参数将失效 |
+| `sequence_field` | `string` | ✅ | `started_at` | 目前仅支持started_at字段 |
+| `sequence_type` | `string` | ✅ | `desc` | 排序类型：desc（默认降序），asc（升序） |
 ---
 ## 3. 响应
 **响应参数 Schema**（11 个字段）:
@@ -157,38 +151,28 @@ detailUrl: "https://gateway.qima-inc.com/api-manager/detail?id=3477"
   "cover_uri": "https://img.yzcdn.cn/upload_files/2020/08/10/Fih7pMf5l5r5b3OZ0nK8Nr7XMsSX.png"
 }
 ```
-**响应参数明细**
+**响应参数明细**（11 个字段）：
 
 | 参数名 | 类型 | 必填 | 示例 | 说明 |
-|---|---|---|---|---|
-| `data` | `array` | ❌ 否 | `` | 返回值 |
-| `list` | `array` | ❌ 否 | `` | 列表 |
-| `live_stream_id` | `integer` | ❌ 否 | `123456` | 直播id |
-| `guang_business_id` | `integer` | ❌ 否 | `123456` | 爱逛号业务id |
-| `title` | `string` | ❌ 否 | `直播` | 直播标题 |
-| `started_at` | `string` | ❌ 否 | `2021-10-10 00:00:00` | 开播时间 |
-| `state` | `integer` | ❌ 否 | `10` | 直播状态（10:预告，15:直播中，45:结束） |
-| `cover_uri` | `string` | ❌ 否 | `https://img.yzcdn.cn/upload_fi` | 直播封面 |
-| `play_uri` | `string` | ❌ 否 | `http://glive-play.yzcdn.cn/liv` | 播放地址 |
-| `replay_uri` | `string` | ❌ 否 | `http://glive-play.yzcdn.cn/liv` | 回放地址 |
-| `guang_business` | `string` | ❌ 否 | `` | 爱逛号信息 |
+|--------|------|------|------|------|
+| `data` | `array` | ❌ | `` | 返回值 |
+| `list` | `array` | ❌ | `` | 列表 |
+| `live_stream_id` | `integer` | ❌ | `123456` | 直播id |
+| `guang_business_id` | `integer` | ❌ | `123456` | 爱逛号业务id |
+| `title` | `string` | ❌ | `直播` | 直播标题 |
+| `started_at` | `string` | ❌ | `2021-10-10 00:00:00` | 开播时间 |
+| `state` | `integer` | ❌ | `10` | 直播状态（10:预告，15:直播中，45:结束） |
+| `cover_uri` | `string` | ❌ | `https://img.yzcdn.cn/upload_files/2020/0` | 直播封面 |
+| `play_uri` | `string` | ❌ | `http://glive-play.yzcdn.cn/live/3973a330` | 播放地址 |
+| `replay_uri` | `string` | ❌ | `http://glive-play.yzcdn.cn/live/3c6957f0` | 回放地址 |
+| `guang_business` | `string` | ❌ | `` | 爱逛号信息 |
 ---
 ## 4. cURL / Python 调用示例
 ```bash
-# 有赞云 API 调用示例
-# 有赞云地址: https://open.youzanyun.com
-# 文档地址: https://gateway.qima-inc.com/api-manager/detail?id=3477
-
-curl -X POST 'https://open.youzanyun.com/api/youzan.skinfo/1.0.0' \
-  -H 'Authorization: Bearer <YOUR_ACCESS_TOKEN>' \
+curl -X POST 'https://open.youzanyun.com/api/youzan.aiguang.live.search/1.0.0' \
+  -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
   -H 'Content-Type: application/json' \
-  -d '{
-  "page_no": "1",
-  "page_size": "10",
-  "state_list": "[10, 15]",
-  "is_replay_search": "true",
-  "sequence_field": "started_at"
-}'
+  -d '{\n  "page_no": "1",\n  "page_size": "10",\n  "state_list": "[10, 15]",\n  "is_replay_search": "true",\n  "sequence_field": "started_at",\n  "sequence_type": "desc"\n}'
 ```
 
 ```python
@@ -196,51 +180,48 @@ import requests
 
 url = "https://open.youzanyun.com/api/youzan.aiguang.live.search/1.0.0"
 headers = {
-    "Authorization": "Bearer <YOUR_ACCESS_TOKEN>",
-    "Content-Type": "application/json"
+    "Authorization": "Bearer YOUR_ACCESS_TOKEN",
+    "Content-Type": "application/json",
 }
 payload = {
-  "page_no": "1",
-  "page_size": "10",
-  "state_list": "[10, 15]",
-  "is_replay_search": "true",
-  "sequence_field": "started_at"
+    "page_no": "1",
+    "page_size": "10",
+    "state_list": "[10, 15]",
+    "is_replay_search": "true",
+    "sequence_field": "started_at",
+    "sequence_type": "desc"
 }
 
-response = requests.post(url, json=payload, headers=headers)
-print(response.json())
+resp = requests.post(url, json=payload, headers=headers)
+print(resp.json())
 ```
-
-> ⚠️ **注意**：以上为示例代码，`access_token` 需要通过 OAuth2.0 流程获取。
-> 真实调用地址和参数请以管理后台详情页为准。
-
 ---
 ## 5. 错误码
-## 错误码
+| 错误码 | 类型 | 说明 |
+|--------|------|------|
+| 10001 | `SYSTEM_ERROR` | 系统内部错误 |
+| 10002 | `INVALID_PARAMETER` | 参数错误 |
+| 10003 | `UNAUTHORIZED` | 未授权或授权已过期 |
+| 10004 | `PERMISSION_DENIED` | 无权限调用此接口 |
+| 10005 | `RESOURCE_NOT_FOUND` | 请求的资源不存在 |
+| 20001 | `RATE_LIMIT_EXCEEDED` | 调用频率超限 |
+| 20002 | `QUOTA_EXCEEDED` | 接口配额已用完 |
+---
+## 6. 权限与计费
 
-| 错误码 | 说明 | 处理建议 |
-|--------|------|----------|
-| 1000 | 系统内部错误 | 稍后重试或联系技术支持 |
-| 1001 | 鉴权失败 | 检查 access_token 是否有效 |
-| 1002 | 参数校验失败 | 检查必填参数是否完整 |
-| 1003 | 权限不足 | 确认应用已开通对应接口权限 |
-| 1004 | 频率超限 | 降低请求频率或申请更高配额 |
-| 1005 | 资源不存在 | 检查请求的业务 ID 是否正确 |
-| 1006 | 请求超时 | 增加超时时间或稍后重试 |
-| 1007 | 账户欠费 | 完成账户充值后重试 |
+**接口计费状态：未知（请以官网实际披露为准）。**
 
-> 更多错误码请参考：[有赞云错误码文档](https://doc.youzanyun.com) |
+**拥有此API的能力包：** 暂无数据（请以官网实际披露为准）。
 
 ---
-## 6. 内部服务信息
-| 字段 | 值 |
-|------|---|
-| 协议类型 | dubbo |
-| 服务名称 | `com.guang.live.api.service.LiveStreamingSearchService` |
-| 方法名称 | `searchForYouzanShop` |
-| 超时时间 | 5000ms |
----
-## 8. 关联接口
-*（暂无关联数据，文档完善后将补充相关接口）*
----
-_本文档由 AI 自动生成，源数据来自 [有赞云开放平台详情页](https://gateway.qima-inc.com/api-manager/detail?id=3477)_
+## 7. 权限说明
+
+**应用类目 → 权限类型：**
+
+| 应用类目 | 权限类型 |
+|----------|----------|
+| 有赞微商城、有赞零售、有赞教育、有赞美业 | 普通自研商家（基础权益） |
+| 大客户定制接口、美业大客户定制、零售大客户定制、收款二维码-大客专用 | 大客定制接口（需购买大客套餐） |
+| 客户关系CRM、门店POS | iPaaS 套餐权益（需购买 iPaaS 套餐） |
+
+> 权限数据来源：[有赞云能力包说明](https://doc.youzanyun.com/detail/content/API/0/120)

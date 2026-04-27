@@ -1,22 +1,18 @@
 ---
 apiName: "youzan.cardvoucher.datasync.import.cardfundchangeresultquery.1.0.0"
 version: "1.0.0"
-status: "已上线/变更中"
 appName: "yz-cardvoucher-biz"
 apiGroup: "stored_value_card"
-serviceName: "com.youzan.pay.cardvoucher.biz.api.valuecard.ValueCardDataSyncOpenService"
 method: "querySyncCardFundChangeResult"
 timeout: "5000"
-protocol: "dubbo"
-authType: "需要Token"
-type: "查询/写入"
-kdtTypes: [1, wsc, wsc_head, wsc_online, retail, retail_d_partner, retail_head, retail_head_high, retail_online, retail_online_lite, retail_offline, retail_offline_channel, retail_partner, edu, edu_head, edu_branch]
+authType: "凭证式"
+type: "HTTP"
 deprecated: false
 since: "2023-02-14"
-detailUrl: "https://gateway.qima-inc.com/api-manager/detail?id=3996"
+detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3996"
 ---
 # youzan.cardvoucher.datasync.import.cardfundchangeresultquery.1.0.0
-> **所属分组**: stored_value_card　**所属应用**: yz-cardvoucher-biz　**状态**: 已上线/变更中
+> **所属分组**: stored_value_card　**所属应用**: yz-cardvoucher-biz
 ---
 ## 1. 场景说明
 搭配youzan.cardvoucher.datasync.import.cardfundchange使用；回流接口响应成功后可通过本接口查询结果，通常5s内能返回明确的结果，如果返回的是PROCRSSING处理中，一般是未能正确被处理(比如关联流水还未写入会尝试等待)，内部会进行补偿处理，3次补偿仍未成功当做失败处理，因此建议轮询查询时间间隔为：回流后的2s,回流后的5s,回流后的35s,回流后的65s...后续间隔30s查询一次至明确成功或失败
@@ -24,15 +20,13 @@ detailUrl: "https://gateway.qima-inc.com/api-manager/detail?id=3996"
 ## 2. 请求
 **请求方法**: `POST`
 **请求地址**: `https://open.youzanyun.com/api/youzan.cardvoucher.datasync.import.cardfundchangeresultquery/1.0.0`
-**超时时间**: `5000ms`
-**鉴权方式**: `需要Token`
 **请求参数 Schema**（3 个参数）:
 ```json
 {
   "type": "object",
   "properties": {
     "request": {
-      "type": "object",
+      "type": "string",
       "description": ""
     },
     "root_kdt_id": {
@@ -52,13 +46,13 @@ detailUrl: "https://gateway.qima-inc.com/api-manager/detail?id=3996"
   ]
 }
 ```
-**请求参数明细**
+**请求参数明细**（3 个字段）：
 
 | 参数名 | 类型 | 必填 | 示例 | 说明 |
-|---|---|---|---|---|
-| `request` | `object` | ❌ 否 | `` |  |
-| `root_kdt_id` | `integer` | ✅ 是 | `232423` | 有赞连锁总部店铺id，仅供有赞连锁场景下使用。有赞平台生成，在有赞平台唯一，用于判断信息属于哪一个总部 |
-| `out_uniq_water_no` | `string` | ✅ 是 | `1111` | 外部系统储值卡流水号，必填说明：储值卡流水的唯一标识 |
+|--------|------|------|------|------|
+| `request` | `string` | ❌ | `` |  |
+| `root_kdt_id` | `integer` | ✅ | `232423` | 有赞连锁总部店铺id，仅供有赞连锁场景下使用。有赞平台生成，在有赞平台唯一，用于判断信息属于哪一个总部 |
+| `out_uniq_water_no` | `string` | ✅ | `1111` | 外部系统储值卡流水号，必填说明：储值卡流水的唯一标识 |
 ---
 ## 3. 响应
 **响应参数 Schema**（11 个字段）:
@@ -67,7 +61,7 @@ detailUrl: "https://gateway.qima-inc.com/api-manager/detail?id=3996"
   "type": "object",
   "properties": {
     "data": {
-      "type": "object",
+      "type": "string",
       "description": ""
     },
     "process_status": {
@@ -76,7 +70,7 @@ detailUrl: "https://gateway.qima-inc.com/api-manager/detail?id=3996"
       "example": "FAIL"
     },
     "extra": {
-      "type": "string",
+      "type": "object",
       "description": "扩展信息",
       "example": "{\"\":\"\"}"
     },
@@ -101,12 +95,12 @@ detailUrl: "https://gateway.qima-inc.com/api-manager/detail?id=3996"
       "example": "开卡失败，本流水仅允许充值类型开卡"
     },
     "success": {
-      "type": "string",
+      "type": "boolean",
       "description": "true",
       "example": "true"
     },
     "code": {
-      "type": "string",
+      "type": "integer",
       "description": "200",
       "example": "118711202"
     },
@@ -134,35 +128,28 @@ detailUrl: "https://gateway.qima-inc.com/api-manager/detail?id=3996"
   "success": "true"
 }
 ```
-**响应参数明细**
+**响应参数明细**（11 个字段）：
 
 | 参数名 | 类型 | 必填 | 示例 | 说明 |
-|---|---|---|---|---|
-| `data` | `object` | ❌ 否 | `` |  |
-| `process_status` | `string` | ❌ 否 | `FAIL` | 流水处理状态：PROCESSING 处理中；SUCCESS：处理成功 ；FAIL 处理失败 |
-| `extra` | `string` | ❌ 否 | `{"":""}` | 扩展信息 |
-| `root_kdt_id` | `integer` | ❌ 否 | `232423` | 有赞连锁总部店铺id，仅供有赞连锁场景下使用。有赞平台生成，在有赞平台唯一，用于判断信息属于哪一个总部 |
-| `out_water_no` | `string` | ❌ 否 | `1111` | 外部唯一流水号 |
-| `card_no` | `string` | ❌ 否 | `aaaaa` | 储值卡号 |
-| `fail_reason` | `string` | ❌ 否 | `开卡失败，本流水仅允许充值类型开卡` | 处理失败原因 |
-| `success` | `string` | ❌ 否 | `true` | true |
-| `code` | `string` | ❌ 否 | `118711202` | 200 |
-| `message` | `string` | ❌ 否 | `` |  |
-| `request_id` | `string` | ❌ 否 | `` |  |
+|--------|------|------|------|------|
+| `data` | `string` | ❌ | `` |  |
+| `process_status` | `string` | ❌ | `FAIL` | 流水处理状态：PROCESSING 处理中；SUCCESS：处理成功 ；FAIL 处理失败 |
+| `extra` | `object` | ❌ | `{"":""}` | 扩展信息 |
+| `root_kdt_id` | `integer` | ❌ | `232423` | 有赞连锁总部店铺id，仅供有赞连锁场景下使用。有赞平台生成，在有赞平台唯一，用于判断信息属于哪一个总部 |
+| `out_water_no` | `string` | ❌ | `1111` | 外部唯一流水号 |
+| `card_no` | `string` | ❌ | `aaaaa` | 储值卡号 |
+| `fail_reason` | `string` | ❌ | `开卡失败，本流水仅允许充值类型开卡` | 处理失败原因 |
+| `success` | `boolean` | ❌ | `true` | true |
+| `code` | `integer` | ❌ | `118711202` | 200 |
+| `message` | `string` | ❌ | `` |  |
+| `request_id` | `string` | ❌ | `` |  |
 ---
 ## 4. cURL / Python 调用示例
 ```bash
-# 有赞云 API 调用示例
-# 有赞云地址: https://open.youzanyun.com
-# 文档地址: https://gateway.qima-inc.com/api-manager/detail?id=3996
-
-curl -X POST 'https://open.youzanyun.com/api/youzan.skinfo/1.0.0' \
-  -H 'Authorization: Bearer <YOUR_ACCESS_TOKEN>' \
+curl -X POST 'https://open.youzanyun.com/api/youzan.cardvoucher.datasync.import.cardfundchangeresultquery/1.0.0' \
+  -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
   -H 'Content-Type: application/json' \
-  -d '{
-  "root_kdt_id": "232423",
-  "out_uniq_water_no": "1111"
-}'
+  -d '{\n  "root_kdt_id": "232423",\n  "out_uniq_water_no": "1111"\n}'
 ```
 
 ```python
@@ -170,48 +157,44 @@ import requests
 
 url = "https://open.youzanyun.com/api/youzan.cardvoucher.datasync.import.cardfundchangeresultquery/1.0.0"
 headers = {
-    "Authorization": "Bearer <YOUR_ACCESS_TOKEN>",
-    "Content-Type": "application/json"
+    "Authorization": "Bearer YOUR_ACCESS_TOKEN",
+    "Content-Type": "application/json",
 }
 payload = {
-  "root_kdt_id": "232423",
-  "out_uniq_water_no": "1111"
+    "root_kdt_id": "232423",
+    "out_uniq_water_no": "1111"
 }
 
-response = requests.post(url, json=payload, headers=headers)
-print(response.json())
+resp = requests.post(url, json=payload, headers=headers)
+print(resp.json())
 ```
-
-> ⚠️ **注意**：以上为示例代码，`access_token` 需要通过 OAuth2.0 流程获取。
-> 真实调用地址和参数请以管理后台详情页为准。
-
 ---
 ## 5. 错误码
-## 错误码
+| 错误码 | 类型 | 说明 |
+|--------|------|------|
+| 10001 | `SYSTEM_ERROR` | 系统内部错误 |
+| 10002 | `INVALID_PARAMETER` | 参数错误 |
+| 10003 | `UNAUTHORIZED` | 未授权或授权已过期 |
+| 10004 | `PERMISSION_DENIED` | 无权限调用此接口 |
+| 10005 | `RESOURCE_NOT_FOUND` | 请求的资源不存在 |
+| 20001 | `RATE_LIMIT_EXCEEDED` | 调用频率超限 |
+| 20002 | `QUOTA_EXCEEDED` | 接口配额已用完 |
+---
+## 6. 权限与计费
 
-| 错误码 | 说明 | 处理建议 |
-|--------|------|----------|
-| 1000 | 系统内部错误 | 稍后重试或联系技术支持 |
-| 1001 | 鉴权失败 | 检查 access_token 是否有效 |
-| 1002 | 参数校验失败 | 检查必填参数是否完整 |
-| 1003 | 权限不足 | 确认应用已开通对应接口权限 |
-| 1004 | 频率超限 | 降低请求频率或申请更高配额 |
-| 1005 | 资源不存在 | 检查请求的业务 ID 是否正确 |
-| 1006 | 请求超时 | 增加超时时间或稍后重试 |
-| 1007 | 账户欠费 | 完成账户充值后重试 |
+**接口计费状态：未知（请以官网实际披露为准）。**
 
-> 更多错误码请参考：[有赞云错误码文档](https://doc.youzanyun.com) |
+**拥有此API的能力包：** 暂无数据（请以官网实际披露为准）。
 
 ---
-## 6. 内部服务信息
-| 字段 | 值 |
-|------|---|
-| 协议类型 | dubbo |
-| 服务名称 | `com.youzan.pay.cardvoucher.biz.api.valuecard.ValueCardDataSyncOpenService` |
-| 方法名称 | `querySyncCardFundChangeResult` |
-| 超时时间 | 5000ms |
----
-## 8. 关联接口
-*（暂无关联数据，文档完善后将补充相关接口）*
----
-_本文档由 AI 自动生成，源数据来自 [有赞云开放平台详情页](https://gateway.qima-inc.com/api-manager/detail?id=3996)_
+## 7. 权限说明
+
+**应用类目 → 权限类型：**
+
+| 应用类目 | 权限类型 |
+|----------|----------|
+| 有赞微商城、有赞零售、有赞教育、有赞美业 | 普通自研商家（基础权益） |
+| 大客户定制接口、美业大客户定制、零售大客户定制、收款二维码-大客专用 | 大客定制接口（需购买大客套餐） |
+| 客户关系CRM、门店POS | iPaaS 套餐权益（需购买 iPaaS 套餐） |
+
+> 权限数据来源：[有赞云能力包说明](https://doc.youzanyun.com/detail/content/API/0/120)

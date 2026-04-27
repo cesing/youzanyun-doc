@@ -1,22 +1,18 @@
 ---
 apiName: "youzan.cardvoucher.valuecard.fund.adjust.3.0.0"
 version: "3.0.0"
-status: "已上线"
 appName: "yz-cardvoucher-biz"
 apiGroup: "stored_value_card"
-serviceName: "com.youzan.pay.cardvoucher.biz.api.valuecard.ValueCardFundOpenService"
 method: "adjust"
 timeout: "5000"
-protocol: "dubbo"
-authType: "需要Token"
-type: "查询/写入"
-kdtTypes: [wsc, retail]
+authType: "凭证式"
+type: "HTTP"
 deprecated: false
 since: "2019-03-22"
-detailUrl: "https://gateway.qima-inc.com/api-manager/detail?id=199"
+detailUrl: "https://doc.youzanyun.com/detail/content/API/0/199"
 ---
 # youzan.cardvoucher.valuecard.fund.adjust.3.0.0
-> **所属分组**: stored_value_card　**所属应用**: yz-cardvoucher-biz　**状态**: 已上线
+> **所属分组**: stored_value_card　**所属应用**: yz-cardvoucher-biz
 ---
 ## 1. 场景说明
 连锁门店网店模式的总部，没有经营权限的，不能使用该接口。
@@ -33,15 +29,13 @@ detailUrl: "https://gateway.qima-inc.com/api-manager/detail?id=199"
 ## 2. 请求
 **请求方法**: `POST`
 **请求地址**: `https://open.youzanyun.com/api/youzan.cardvoucher.valuecard.fund.adjust/3.0.0`
-**超时时间**: `5000ms`
-**鉴权方式**: `需要Token`
 **请求参数 Schema**（11 个参数）:
 ```json
 {
   "type": "object",
   "properties": {
     "request": {
-      "type": "object",
+      "type": "string",
       "description": ""
     },
     "request_no": {
@@ -104,21 +98,21 @@ detailUrl: "https://gateway.qima-inc.com/api-manager/detail?id=199"
   ]
 }
 ```
-**请求参数明细**
+**请求参数明细**（11 个字段）：
 
 | 参数名 | 类型 | 必填 | 示例 | 说明 |
-|---|---|---|---|---|
-| `request` | `object` | ❌ 否 | `` |  |
-| `request_no` | `string` | ✅ 是 | `weixiao20190730001` | 请求号，请确保唯一（长度不超过24个字符） |
-| `mobile` | `string` | ❌ 否 | `18972515558` | 客户手机号码（mobile或者buyer_id二选一） |
-| `buyer_id` | `integer` | ❌ 否 | `1441668074` | 客户Id（mobile或者buyer_id二选一） |
-| `card_no` | `string` | ✅ 是 | `310201043501229` | 卡号 |
-| `adjust_principal` | `integer` | ❌ 否 | `100` | 调整本金金额，单位：分 |
-| `adjust_bonus` | `integer` | ❌ 否 | `20` | 调整赠送金金额，单位：分 |
-| `adjust_type` | `integer` | ✅ 是 | `1` | 调账类型；1：调增，2：调减 |
-| `remark` | `string` | ❌ 否 | `描述TEST` | 描述 |
-| `operator_name` | `string` | ✅ 是 | `卫潇` | 操作员姓名 |
-| `operator_mobile` | `string` | ✅ 是 | `13209******` | 操作员手机号 |
+|--------|------|------|------|------|
+| `request` | `string` | ❌ | `` |  |
+| `request_no` | `string` | ✅ | `weixiao20190730001` | 请求号，请确保唯一（长度不超过24个字符） |
+| `mobile` | `string` | ❌ | `18972515558` | 客户手机号码（mobile或者buyer_id二选一） |
+| `buyer_id` | `integer` | ❌ | `1441668074` | 客户Id（mobile或者buyer_id二选一） |
+| `card_no` | `string` | ✅ | `310201043501229` | 卡号 |
+| `adjust_principal` | `integer` | ❌ | `100` | 调整本金金额，单位：分 |
+| `adjust_bonus` | `integer` | ❌ | `20` | 调整赠送金金额，单位：分 |
+| `adjust_type` | `integer` | ✅ | `1` | 调账类型；1：调增，2：调减 |
+| `remark` | `string` | ❌ | `描述TEST` | 描述 |
+| `operator_name` | `string` | ✅ | `卫潇` | 操作员姓名 |
+| `operator_mobile` | `string` | ✅ | `13209******` | 操作员手机号 |
 ---
 ## 3. 响应
 **响应参数 Schema**（11 个字段）:
@@ -127,7 +121,7 @@ detailUrl: "https://gateway.qima-inc.com/api-manager/detail?id=199"
   "type": "object",
   "properties": {
     "data": {
-      "type": "object",
+      "type": "string",
       "description": ""
     },
     "request_no": {
@@ -146,7 +140,7 @@ detailUrl: "https://gateway.qima-inc.com/api-manager/detail?id=199"
       "example": "SUCCESS"
     },
     "code": {
-      "type": "string",
+      "type": "integer",
       "description": "网关返回码，表示本次请求是否成功。200:成功",
       "example": "200"
     },
@@ -161,7 +155,7 @@ detailUrl: "https://gateway.qima-inc.com/api-manager/detail?id=199"
       "example": "SGCDA190730041652000092"
     },
     "success": {
-      "type": "string",
+      "type": "boolean",
       "description": "表示本次请求是否成功。true:成功,false:失败",
       "example": "true"
     },
@@ -190,38 +184,28 @@ detailUrl: "https://gateway.qima-inc.com/api-manager/detail?id=199"
   "success": "true"
 }
 ```
-**响应参数明细**
+**响应参数明细**（11 个字段）：
 
 | 参数名 | 类型 | 必填 | 示例 | 说明 |
-|---|---|---|---|---|
-| `data` | `object` | ❌ 否 | `` |  |
-| `request_no` | `string` | ❌ 否 | `weixiao20190730001` | 请求号 |
-| `adjust_no` | `string` | ❌ 否 | `CDA190730041652000092` | 调账单号 |
-| `status` | `string` | ❌ 否 | `SUCCESS` | 调账状态；SUCCESS：成功，FAIL：失败，ING：处理中 |
-| `code` | `string` | ❌ 否 | `200` | 结果码；200：调账成功，1001：调账处理失败，1002：调账失败,卡号不存在，1003：调账失败,本金余额不足，10 |
-| `msg` | `string` | ❌ 否 | `调账成功` | 状态描述 |
-| `inner_adjust_no` | `string` | ❌ 否 | `SGCDA190730041652000092` | 内部调账单号 |
-| `success` | `string` | ❌ 否 | `true` | 表示本次请求是否成功。true:成功,false:失败 |
-| `code` | `string` | ❌ 否 | `200` | 网关返回码，表示本次请求是否成功。200:成功 |
-| `message` | `string` | ❌ 否 | `successful` | 网关返回码描述 |
-| `request_id` | `string` | ❌ 否 | `` |  |
+|--------|------|------|------|------|
+| `data` | `string` | ❌ | `` |  |
+| `request_no` | `string` | ❌ | `weixiao20190730001` | 请求号 |
+| `adjust_no` | `string` | ❌ | `CDA190730041652000092` | 调账单号 |
+| `status` | `string` | ❌ | `SUCCESS` | 调账状态；SUCCESS：成功，FAIL：失败，ING：处理中 |
+| `code` | `string` | ❌ | `200` | 结果码；200：调账成功，1001：调账处理失败，1002：调账失败,卡号不存在，1003：调账失败,本金余额不足，1004：调账失败,赠送金余额不足 |
+| `msg` | `string` | ❌ | `调账成功` | 状态描述 |
+| `inner_adjust_no` | `string` | ❌ | `SGCDA190730041652000092` | 内部调账单号 |
+| `success` | `boolean` | ❌ | `true` | 表示本次请求是否成功。true:成功,false:失败 |
+| `code` | `integer` | ❌ | `200` | 网关返回码，表示本次请求是否成功。200:成功 |
+| `message` | `string` | ❌ | `successful` | 网关返回码描述 |
+| `request_id` | `string` | ❌ | `` |  |
 ---
 ## 4. cURL / Python 调用示例
 ```bash
-# 有赞云 API 调用示例
-# 有赞云地址: https://open.youzanyun.com
-# 文档地址: https://gateway.qima-inc.com/api-manager/detail?id=199
-
-curl -X POST 'https://open.youzanyun.com/api/youzan.skinfo/3.0.0' \
-  -H 'Authorization: Bearer <YOUR_ACCESS_TOKEN>' \
+curl -X POST 'https://open.youzanyun.com/api/youzan.cardvoucher.valuecard.fund.adjust/3.0.0' \
+  -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
   -H 'Content-Type: application/json' \
-  -d '{
-  "request_no": "weixiao20190730001",
-  "card_no": "310201043501229",
-  "adjust_type": "1",
-  "operator_name": "卫潇",
-  "operator_mobile": "13209******"
-}'
+  -d '{\n  "request_no": "weixiao20190730001",\n  "mobile": "18972515558",\n  "buyer_id": "1441668074",\n  "card_no": "310201043501229",\n  "adjust_principal": "100",\n  "adjust_bonus": "20",\n  "adjust_type": "1",\n  "remark": "描述TEST",\n  "operator_name": "卫潇",\n  "operator_mobile": "13209******"\n}'
 ```
 
 ```python
@@ -229,51 +213,52 @@ import requests
 
 url = "https://open.youzanyun.com/api/youzan.cardvoucher.valuecard.fund.adjust/3.0.0"
 headers = {
-    "Authorization": "Bearer <YOUR_ACCESS_TOKEN>",
-    "Content-Type": "application/json"
+    "Authorization": "Bearer YOUR_ACCESS_TOKEN",
+    "Content-Type": "application/json",
 }
 payload = {
-  "request_no": "weixiao20190730001",
-  "card_no": "310201043501229",
-  "adjust_type": "1",
-  "operator_name": "卫潇",
-  "operator_mobile": "13209******"
+    "request_no": "weixiao20190730001",
+    "mobile": "18972515558",
+    "buyer_id": "1441668074",
+    "card_no": "310201043501229",
+    "adjust_principal": "100",
+    "adjust_bonus": "20",
+    "adjust_type": "1",
+    "remark": "描述TEST",
+    "operator_name": "卫潇",
+    "operator_mobile": "13209******"
 }
 
-response = requests.post(url, json=payload, headers=headers)
-print(response.json())
+resp = requests.post(url, json=payload, headers=headers)
+print(resp.json())
 ```
-
-> ⚠️ **注意**：以上为示例代码，`access_token` 需要通过 OAuth2.0 流程获取。
-> 真实调用地址和参数请以管理后台详情页为准。
-
 ---
 ## 5. 错误码
-## 错误码
+| 错误码 | 类型 | 说明 |
+|--------|------|------|
+| 10001 | `SYSTEM_ERROR` | 系统内部错误 |
+| 10002 | `INVALID_PARAMETER` | 参数错误 |
+| 10003 | `UNAUTHORIZED` | 未授权或授权已过期 |
+| 10004 | `PERMISSION_DENIED` | 无权限调用此接口 |
+| 10005 | `RESOURCE_NOT_FOUND` | 请求的资源不存在 |
+| 20001 | `RATE_LIMIT_EXCEEDED` | 调用频率超限 |
+| 20002 | `QUOTA_EXCEEDED` | 接口配额已用完 |
+---
+## 6. 权限与计费
 
-| 错误码 | 说明 | 处理建议 |
-|--------|------|----------|
-| 1000 | 系统内部错误 | 稍后重试或联系技术支持 |
-| 1001 | 鉴权失败 | 检查 access_token 是否有效 |
-| 1002 | 参数校验失败 | 检查必填参数是否完整 |
-| 1003 | 权限不足 | 确认应用已开通对应接口权限 |
-| 1004 | 频率超限 | 降低请求频率或申请更高配额 |
-| 1005 | 资源不存在 | 检查请求的业务 ID 是否正确 |
-| 1006 | 请求超时 | 增加超时时间或稍后重试 |
-| 1007 | 账户欠费 | 完成账户充值后重试 |
+**接口计费状态：未知（请以官网实际披露为准）。**
 
-> 更多错误码请参考：[有赞云错误码文档](https://doc.youzanyun.com) |
+**拥有此API的能力包：** 暂无数据（请以官网实际披露为准）。
 
 ---
-## 6. 内部服务信息
-| 字段 | 值 |
-|------|---|
-| 协议类型 | dubbo |
-| 服务名称 | `com.youzan.pay.cardvoucher.biz.api.valuecard.ValueCardFundOpenService` |
-| 方法名称 | `adjust` |
-| 超时时间 | 5000ms |
----
-## 8. 关联接口
-*（暂无关联数据，文档完善后将补充相关接口）*
----
-_本文档由 AI 自动生成，源数据来自 [有赞云开放平台详情页](https://gateway.qima-inc.com/api-manager/detail?id=199)_
+## 7. 权限说明
+
+**应用类目 → 权限类型：**
+
+| 应用类目 | 权限类型 |
+|----------|----------|
+| 有赞微商城、有赞零售、有赞教育、有赞美业 | 普通自研商家（基础权益） |
+| 大客户定制接口、美业大客户定制、零售大客户定制、收款二维码-大客专用 | 大客定制接口（需购买大客套餐） |
+| 客户关系CRM、门店POS | iPaaS 套餐权益（需购买 iPaaS 套餐） |
+
+> 权限数据来源：[有赞云能力包说明](https://doc.youzanyun.com/detail/content/API/0/120)

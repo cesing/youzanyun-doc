@@ -1,22 +1,18 @@
 ---
 apiName: "youzan.cardvoucher.card.create.template.1.0.0"
 version: "1.0.0"
-status: "已上线/变更中"
 appName: "yz-cardvoucher-biz"
 apiGroup: "stored_value_card"
-serviceName: "com.youzan.pay.cardvoucher.biz.api.valuecard.ValueCardFundOpenService"
 method: "create"
 timeout: "5000"
-protocol: "dubbo"
-authType: "需要Token"
-type: "查询/写入"
-kdtTypes: [1, wsc, wsc_head, retail_head_high, retail]
+authType: "凭证式"
+type: "HTTP"
 deprecated: false
 since: "2022-01-17"
-detailUrl: "https://gateway.qima-inc.com/api-manager/detail?id=3588"
+detailUrl: "https://doc.youzanyun.com/detail/content/API/0/3588"
 ---
 # youzan.cardvoucher.card.create.template.1.0.0
-> **所属分组**: stored_value_card　**所属应用**: yz-cardvoucher-biz　**状态**: 已上线/变更中
+> **所属分组**: stored_value_card　**所属应用**: yz-cardvoucher-biz
 ---
 ## 1. 场景说明
 地址：商家后台-会员-储值规则，创建余额模板或储值卡模板
@@ -26,8 +22,6 @@ detailUrl: "https://gateway.qima-inc.com/api-manager/detail?id=3588"
 ## 2. 请求
 **请求方法**: `POST`
 **请求地址**: `https://open.youzanyun.com/api/youzan.cardvoucher.card.create.template/1.0.0`
-**超时时间**: `5000ms`
-**鉴权方式**: `需要Token`
 **请求参数 Schema**（7 个参数）:
 ```json
 {
@@ -64,7 +58,7 @@ detailUrl: "https://gateway.qima-inc.com/api-manager/detail?id=3588"
       "example": "0"
     },
     "kdt_ids": {
-      "type": "string",
+      "type": "array",
       "description": "当卡模板适用店铺类型为1/2时必填",
       "example": "[\"102129885\"]"
     }
@@ -78,17 +72,17 @@ detailUrl: "https://gateway.qima-inc.com/api-manager/detail?id=3588"
   ]
 }
 ```
-**请求参数明细**
+**请求参数明细**（7 个字段）：
 
 | 参数名 | 类型 | 必填 | 示例 | 说明 |
-|---|---|---|---|---|
-| `kdt_id` | `string` | ✅ 是 | `102129885` | 店铺在有赞的id标识，有赞平台生成，在有赞平台唯一，用于判断信息属于哪一个店铺 |
-| `operator_uid` | `string` | ✅ 是 | `18758285476` | 操作人id，传入注册过有赞的手机号，会自动转换成有赞体系内的id |
-| `template_type` | `integer` | ✅ 是 | `1002` | 模板类型：1001 余额模板 1002 储值卡模板 |
-| `operator_name` | `string` | ❌ 否 | `fairy` | 操作人名称 |
-| `template_name` | `string` | ✅ 是 | `fairy测试储值卡` | 模版名称， |
-| `limit_type` | `integer` | ✅ 是 | `0` | 卡模板适用店铺类型：0 所有店铺 1 部分店铺适用 2 部分店铺不适应 |
-| `kdt_ids` | `string` | ❌ 否 | `["102129885"]` | 当卡模板适用店铺类型为1/2时必填 |
+|--------|------|------|------|------|
+| `kdt_id` | `string` | ✅ | `102129885` | 店铺在有赞的id标识，有赞平台生成，在有赞平台唯一，用于判断信息属于哪一个店铺 |
+| `operator_uid` | `string` | ✅ | `18758285476` | 操作人id，传入注册过有赞的手机号，会自动转换成有赞体系内的id |
+| `template_type` | `integer` | ✅ | `1002` | 模板类型：1001 余额模板 1002 储值卡模板 |
+| `operator_name` | `string` | ❌ | `fairy` | 操作人名称 |
+| `template_name` | `string` | ✅ | `fairy测试储值卡` | 模版名称， |
+| `limit_type` | `integer` | ✅ | `0` | 卡模板适用店铺类型：0 所有店铺 1 部分店铺适用 2 部分店铺不适应 |
+| `kdt_ids` | `array` | ❌ | `["102129885"]` | 当卡模板适用店铺类型为1/2时必填 |
 ---
 ## 3. 响应
 **响应参数 Schema**（7 个字段）:
@@ -97,7 +91,7 @@ detailUrl: "https://gateway.qima-inc.com/api-manager/detail?id=3588"
   "type": "object",
   "properties": {
     "data": {
-      "type": "object",
+      "type": "string",
       "description": "创建卡模板接口响应参数"
     },
     "template_no": {
@@ -106,12 +100,12 @@ detailUrl: "https://gateway.qima-inc.com/api-manager/detail?id=3588"
       "example": "6534123450"
     },
     "success": {
-      "type": "string",
+      "type": "boolean",
       "description": "请求是否成功",
       "example": "true"
     },
     "code": {
-      "type": "string",
+      "type": "integer",
       "description": "响应码",
       "example": "200"
     },
@@ -126,7 +120,7 @@ detailUrl: "https://gateway.qima-inc.com/api-manager/detail?id=3588"
       "example": "0000000000000"
     },
     "error_data": {
-      "type": "string",
+      "type": "object",
       "description": "错误信息",
       "example": "错误"
     }
@@ -145,34 +139,24 @@ detailUrl: "https://gateway.qima-inc.com/api-manager/detail?id=3588"
   "error_data": "错误"
 }
 ```
-**响应参数明细**
+**响应参数明细**（7 个字段）：
 
 | 参数名 | 类型 | 必填 | 示例 | 说明 |
-|---|---|---|---|---|
-| `data` | `object` | ❌ 否 | `` | 创建卡模板接口响应参数 |
-| `template_no` | `string` | ❌ 否 | `6534123450` | 模版编号 |
-| `success` | `string` | ❌ 否 | `true` | 请求是否成功 |
-| `code` | `string` | ❌ 否 | `200` | 响应码 |
-| `message` | `string` | ❌ 否 | `成功` | 响应信息 |
-| `request_id` | `string` | ❌ 否 | `0000000000000` | 请求id |
-| `error_data` | `string` | ❌ 否 | `错误` | 错误信息 |
+|--------|------|------|------|------|
+| `data` | `string` | ❌ | `` | 创建卡模板接口响应参数 |
+| `template_no` | `string` | ❌ | `6534123450` | 模版编号 |
+| `success` | `boolean` | ❌ | `true` | 请求是否成功 |
+| `code` | `integer` | ❌ | `200` | 响应码 |
+| `message` | `string` | ❌ | `成功` | 响应信息 |
+| `request_id` | `string` | ❌ | `0000000000000` | 请求id |
+| `error_data` | `object` | ❌ | `错误` | 错误信息 |
 ---
 ## 4. cURL / Python 调用示例
 ```bash
-# 有赞云 API 调用示例
-# 有赞云地址: https://open.youzanyun.com
-# 文档地址: https://gateway.qima-inc.com/api-manager/detail?id=3588
-
-curl -X POST 'https://open.youzanyun.com/api/youzan.skinfo/1.0.0' \
-  -H 'Authorization: Bearer <YOUR_ACCESS_TOKEN>' \
+curl -X POST 'https://open.youzanyun.com/api/youzan.cardvoucher.card.create.template/1.0.0' \
+  -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
   -H 'Content-Type: application/json' \
-  -d '{
-  "kdt_id": "102129885",
-  "operator_uid": "18758285476",
-  "template_type": "1002",
-  "template_name": "fairy测试储值卡",
-  "limit_type": "0"
-}'
+  -d '{\n  "kdt_id": "102129885",\n  "operator_uid": "18758285476",\n  "template_type": "1002",\n  "operator_name": "fairy",\n  "template_name": "fairy测试储值卡",\n  "limit_type": "0",\n  "kdt_ids": "[\"102129885\"]"\n}'
 ```
 
 ```python
@@ -180,51 +164,49 @@ import requests
 
 url = "https://open.youzanyun.com/api/youzan.cardvoucher.card.create.template/1.0.0"
 headers = {
-    "Authorization": "Bearer <YOUR_ACCESS_TOKEN>",
-    "Content-Type": "application/json"
+    "Authorization": "Bearer YOUR_ACCESS_TOKEN",
+    "Content-Type": "application/json",
 }
 payload = {
-  "kdt_id": "102129885",
-  "operator_uid": "18758285476",
-  "template_type": "1002",
-  "template_name": "fairy测试储值卡",
-  "limit_type": "0"
+    "kdt_id": "102129885",
+    "operator_uid": "18758285476",
+    "template_type": "1002",
+    "operator_name": "fairy",
+    "template_name": "fairy测试储值卡",
+    "limit_type": "0",
+    "kdt_ids": "[\"102129885\"]"
 }
 
-response = requests.post(url, json=payload, headers=headers)
-print(response.json())
+resp = requests.post(url, json=payload, headers=headers)
+print(resp.json())
 ```
-
-> ⚠️ **注意**：以上为示例代码，`access_token` 需要通过 OAuth2.0 流程获取。
-> 真实调用地址和参数请以管理后台详情页为准。
-
 ---
 ## 5. 错误码
-## 错误码
+| 错误码 | 类型 | 说明 |
+|--------|------|------|
+| 10001 | `SYSTEM_ERROR` | 系统内部错误 |
+| 10002 | `INVALID_PARAMETER` | 参数错误 |
+| 10003 | `UNAUTHORIZED` | 未授权或授权已过期 |
+| 10004 | `PERMISSION_DENIED` | 无权限调用此接口 |
+| 10005 | `RESOURCE_NOT_FOUND` | 请求的资源不存在 |
+| 20001 | `RATE_LIMIT_EXCEEDED` | 调用频率超限 |
+| 20002 | `QUOTA_EXCEEDED` | 接口配额已用完 |
+---
+## 6. 权限与计费
 
-| 错误码 | 说明 | 处理建议 |
-|--------|------|----------|
-| 1000 | 系统内部错误 | 稍后重试或联系技术支持 |
-| 1001 | 鉴权失败 | 检查 access_token 是否有效 |
-| 1002 | 参数校验失败 | 检查必填参数是否完整 |
-| 1003 | 权限不足 | 确认应用已开通对应接口权限 |
-| 1004 | 频率超限 | 降低请求频率或申请更高配额 |
-| 1005 | 资源不存在 | 检查请求的业务 ID 是否正确 |
-| 1006 | 请求超时 | 增加超时时间或稍后重试 |
-| 1007 | 账户欠费 | 完成账户充值后重试 |
+**接口计费状态：未知（请以官网实际披露为准）。**
 
-> 更多错误码请参考：[有赞云错误码文档](https://doc.youzanyun.com) |
+**拥有此API的能力包：** 暂无数据（请以官网实际披露为准）。
 
 ---
-## 6. 内部服务信息
-| 字段 | 值 |
-|------|---|
-| 协议类型 | dubbo |
-| 服务名称 | `com.youzan.pay.cardvoucher.biz.api.valuecard.ValueCardFundOpenService` |
-| 方法名称 | `create` |
-| 超时时间 | 5000ms |
----
-## 8. 关联接口
-*（暂无关联数据，文档完善后将补充相关接口）*
----
-_本文档由 AI 自动生成，源数据来自 [有赞云开放平台详情页](https://gateway.qima-inc.com/api-manager/detail?id=3588)_
+## 7. 权限说明
+
+**应用类目 → 权限类型：**
+
+| 应用类目 | 权限类型 |
+|----------|----------|
+| 有赞微商城、有赞零售、有赞教育、有赞美业 | 普通自研商家（基础权益） |
+| 大客户定制接口、美业大客户定制、零售大客户定制、收款二维码-大客专用 | 大客定制接口（需购买大客套餐） |
+| 客户关系CRM、门店POS | iPaaS 套餐权益（需购买 iPaaS 套餐） |
+
+> 权限数据来源：[有赞云能力包说明](https://doc.youzanyun.com/detail/content/API/0/120)
